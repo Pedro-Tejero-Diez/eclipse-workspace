@@ -5,29 +5,20 @@ import java.util.Scanner;
 public class SegundoEjercicio {
 
 	public static void main(String[] args) {
-		int no1;
-		int no2;
-		int suma;
-		int resta;
-		int por;
-		int div;
+		Scanner number = new Scanner(System.in);
+		int numero1, numero2;
 		
-		Scanner numero = new Scanner(System.in);
 		 System.out.println("introduce un número : ");
-		 no1 = numero.nextInt();
+		 numero1 = number.nextInt();
 		
 		 System.out.println("introduce otro número : ");
-		 no2 = numero.nextInt();
-		 
-		 suma = no1 + no2;
-		 resta = no1 - no2;
-		 por = no1 * no2;
-		 div = no1 / no2;
+		 numero2 = number.nextInt();
 
-System.out.println("El resultado de la suma es : " + suma);
-System.out.println("El resultado de la resta es : " + resta);
-System.out.println("El resultado de la multiplicacion es : " + por);
-System.out.println("El resultado de la division es : " + div);
+
+System.out.println("El resultado de la suma es : " + (numero1+numero2));
+System.out.println("El resultado de la resta es : " + (numero1-numero2));
+System.out.println("El resultado de la multiplicacion es : " +numero1*numero2);
+System.out.println("El resultado de la division es : " +(float)numero1/numero2);
 
 
 	}

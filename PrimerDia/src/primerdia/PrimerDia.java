@@ -6,23 +6,24 @@ public class PrimerDia {
 
 	public static void main(String[] args) {
 	
-		 Scanner name = new Scanner(System.in);
+		 Scanner inpt = new Scanner(System.in);
+		 String nom, ap;
+		 byte edad;
+		 
 		 System.out.println("introduce tu nombre : ");
-		 String nom = name.nextLine();
+		 nom = inpt.nextLine();
 		 
-		 Scanner surname = new Scanner(System.in);
 		 System.out.println("introduce tu apellido : ");
-		 String ap = surname.nextLine();
+		 ap = inpt.nextLine();
 		 
-		 Scanner age = new Scanner(System.in);
 		 System.out.println("introduce tu edad : ");
-		 String edad = age.nextLine();
+		 edad = inpt.nextByte();
 		 
 		 System.out.println("Estos son tus datos : ");
 		 System.out.println(nom);
 		 System.out.println(ap);
 		 System.out.println(edad);
-		
+	
 	}
 
 }
