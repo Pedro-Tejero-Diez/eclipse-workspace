@@ -9,19 +9,18 @@ public class M4Ejercicio3 {
 
 		Scanner sc = new Scanner(System.in);
 		byte edad;
-		String titulo = "S";
-		String trabajo = "N";
+		String titulo, paro;
+		
+		System.out.println("Tienes título universitario? (S/N) : ");
+		titulo = sc.nextLine();
+		
+		System.out.println("Estas en Paro? (S/N) : ");
+		paro = sc.nextLine();
 		
 		System.out.println("Introduce tu edad : ");
 		edad = sc.nextByte();
-		
-		System.out.println("Tienes título universitario? (S/N) : ");
 
-		
-		System.out.println("Estas en Paro? (S/N) : ");
-		trabajo = sc.nextLine();
-
-		if (edad >= 18 && titulo == "S" || trabajo == "N") {
+		if (edad >= 18 && titulo.equals("S") || paro.equals("S")) {
 			System.out.println("Beca concedida");
 		}
 		else {
