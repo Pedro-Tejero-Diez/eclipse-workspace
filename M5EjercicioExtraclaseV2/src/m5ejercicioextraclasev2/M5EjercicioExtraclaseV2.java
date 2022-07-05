@@ -27,8 +27,7 @@ public class M5EjercicioExtraclaseV2 {
 		    do {
 		    	item = cars.get(i);
 		    	i++;
-		    }
-		    while (!item.equals(marca) && i < cars.size());
+		    } while (!item.equals(marca) && i < cars.size());
 		    
 		    	if (item.equals(marca)) {
 		    		
