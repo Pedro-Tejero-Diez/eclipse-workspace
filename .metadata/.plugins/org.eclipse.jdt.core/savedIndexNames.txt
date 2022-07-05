@@ -3,8 +3,12 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 1865797976.index
 313133350.index
 284551103.index
+<<<<<<< HEAD
 2391896604.index
 4187374218.index
+=======
+847605033.index
+>>>>>>> 3dd4ded130b2b9ada02e5399f122486b27161b37
 4230649395.index
 2251855957.index
 2702298352.index
