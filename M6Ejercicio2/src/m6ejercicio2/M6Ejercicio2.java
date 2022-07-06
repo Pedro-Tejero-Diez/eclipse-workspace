@@ -7,11 +7,13 @@ public class M6Ejercicio2 {
 
 	public static double media(ArrayList<Integer> e, int j) {
 	int suma = 0;
+	int i;
+	
 		for (i=0; i<j; i++) {
 			int x = e.get(i);
 			suma = suma + x;
 		}
-		return suma/e.size();
+		return suma/j;
 					
 		}
 	
