@@ -3031,7 +3031,11 @@ java.lang.IllegalStateException: Disconnected before saving. Please post stacktr
 		at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
 		... 21 more
 <<<<<<< HEAD
+<<<<<<< HEAD
 !SESSION 2022-07-07 09:12:16.521 -----------------------------------------------
+=======
+!SESSION 2022-07-07 06:06:42.227 -----------------------------------------------
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 =======
 !SESSION 2022-07-07 06:06:42.227 -----------------------------------------------
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
@@ -3043,9 +3047,15 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2022-07-07 09:12:29.236
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-07-07 09:12:29.236
+=======
+!ENTRY org.eclipse.jface 2 0 2022-07-07 06:07:18.529
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-07 06:07:18.529
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 =======
 !ENTRY org.eclipse.jface 2 0 2022-07-07 06:07:18.529
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
@@ -3057,7 +3067,11 @@ Binding(CTRL+SHIFT+T,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@417446d9,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26bce60d,
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26bce60d,
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
@@ -3069,17 +3083,23 @@ Binding(CTRL+SHIFT+T,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34070bd2,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-07-07 09:12:29.236
 =======
+=======
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76eadc5a,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-07-07 06:07:18.530
+<<<<<<< HEAD
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
+=======
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
@@ -3087,7 +3107,11 @@ Binding(ALT+SHIFT+R,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e7d3d87,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9d7366,
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9d7366,
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
@@ -3099,7 +3123,11 @@ Binding(ALT+SHIFT+R,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd76982,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20914835,
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20914835,
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
@@ -3108,8 +3136,11 @@ Binding(ALT+SHIFT+R,
 	org.eclipse.ui.contexts.window,,,system)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2022-07-07 09:12:36.852
 =======
+=======
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 !ENTRY org.eclipse.ui 4 4 2022-07-07 06:07:26.645
 !MESSAGE Unable to create part
 !STACK 1
@@ -3383,6 +3414,9 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/M7Ejercicio5/
 !MESSAGE Cannot determine URI for '/M7Ejercicio5/src/m5ejercicio5/M7Ejercicio5.java'.
 
 !ENTRY org.eclipse.egit.ui 2 0 2022-07-07 06:07:28.469
+<<<<<<< HEAD
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
+=======
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\pedro'. If this is
@@ -3390,7 +3424,10 @@ not correct please set the HOME environment variable and restart Eclipse. Otherw
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
 
 !ENTRY org.eclipse.ui.ide 4 4 2022-07-07 07:33:27.886
 !MESSAGE Not properly disposed SWT resource
@@ -3484,4 +3521,7 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+<<<<<<< HEAD
+>>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
+=======
 >>>>>>> 58132cba5c99a5c727aa8cefeb510e0c411e3f4b
