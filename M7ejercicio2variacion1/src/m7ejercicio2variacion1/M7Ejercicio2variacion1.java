@@ -45,13 +45,13 @@ public class M7Ejercicio2variacion1 {
 		public static int maximaNota(ArrayList<Integer> e) {
 			int max;
 			Collections.sort(e);
-			max = e.get(0);
+			max = e.get(2);
 			return max;
 		}
 		public static int minimaNota(ArrayList<Integer> e) {
 			int min;
 			Collections.sort(e);
-			min = e.get(2);
+			min = e.get(0);
 			return min;
 		}
 
