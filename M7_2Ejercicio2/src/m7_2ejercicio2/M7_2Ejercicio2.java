@@ -13,10 +13,10 @@ public class M7_2Ejercicio2 {
 		System.out.println("Introduzca el numero de lineas del árbol");
 		byte numero = sc.nextByte();
 
-		/*
-		 * for (int i=0; i <= numero; i++) { texto += asterisco;
-		 * System.out.println(texto); }
-		 */
+		 /* hay que hacerlo con el bucle for segun dice el profe para practicar
+		  * mirarlo en el video
+		  */
+		
 		for (int i= numero; i <=1; i--) {
 			
 		}
