@@ -13,9 +13,11 @@ public class M7Ejercicio6 {
 do {
 	
 // no se las veces que metera mal el numero el usuario por lo que hago este do while
-		System.out.println("Introduzca el numero del que quiere saber la tabla de multiplicar");
-		numero = sc.nextInt();
-		tabladeMultiplicar(numero);
+		System.out.println("Introduzca un numero entre 0 y 10 ");
+		numero = sc.nextInt();		
+		} while  (numero < 0 || numero > 10);
+
+tabladeMultiplicar(numero);
 	}
 
 	public static void tabladeMultiplicar(int numero) {
