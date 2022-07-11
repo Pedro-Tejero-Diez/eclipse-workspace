@@ -4,7 +4,6 @@
 Console.highWaterMark=88000
 StringVariablePreferencePage=204,170,170,136,
 eclipse.preferences.version=1
-org.eclipse.debug.ui.BreakpointView+org.eclipse.debug.ui.actions.SkipAllBreakpoints=true
 org.eclipse.debug.ui.PREF_FILTER_WORKING_SETS=true
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
 org.eclipse.debug.ui.UseContextualLaunch=false

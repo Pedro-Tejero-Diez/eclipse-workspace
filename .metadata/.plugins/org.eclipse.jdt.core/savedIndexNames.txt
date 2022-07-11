@@ -1,2 +1,19 @@
 INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 3314198231.index
+=======
+3823534423.index
+1865797976.index
+2736644143.index
+3746269174.index
+2742175464.index
+1067347688.index
+3525674604.index
+3579800507.index
+2726192574.index
+955493105.index
+4237558066.index
+1341430375.index
+2723699501.index
+2717580107.index
+>>>>>>> 1e67fa46cfe9f37e234233ad968bf0cd68553dbf
