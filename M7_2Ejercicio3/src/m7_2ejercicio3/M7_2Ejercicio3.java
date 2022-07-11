@@ -13,9 +13,9 @@ public class M7_2Ejercicio3 {
 		byte numero = sc.nextByte();
 		
 
-	for (int i = 1; i <=numero ; i++) {
+	for (int i = 1; i <numero ; i++) {
 		
-			for (int j=1; j<=i; j++) {
+			for (int j=1; j<i; j++) {
 			
 					text += "*";
 			}
