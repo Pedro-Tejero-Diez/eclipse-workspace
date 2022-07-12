@@ -16,8 +16,8 @@ public class M7_2Ejercicio4 {
 		do {
 			System.out.println("Introduce el numero del que quieres saber el factorial");
 			numero = sc.nextLong();
-
-		} while (numero < 1);
+			
+		} while (numero < 0);
 
 		for (long i = numero; i >= 1; i--) {
 			factorial *= i;

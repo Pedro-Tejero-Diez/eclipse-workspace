@@ -22,7 +22,9 @@ public class M7_2Ejercicio6variacion {
 	public static boolean esPrimer(int numero) {
 		boolean primo = false;
 		int resto, i=2;
-		
+		if (numero==1) {
+		primo = true;
+		} else {
 		while (i<numero && !primo) {
 			
 		resto = numero%i;
@@ -31,7 +33,7 @@ public class M7_2Ejercicio6variacion {
 			primo = true;
 		}
 		i++;
-			
+		}
 		}
 		return primo;
 
