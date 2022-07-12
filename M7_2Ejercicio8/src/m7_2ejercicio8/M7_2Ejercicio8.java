@@ -27,7 +27,9 @@ public class M7_2Ejercicio8 {
 		serie.add(0);
 		serie.add(1);
 		// 0 y 1 han de estar siempre en la serie
-
+if (numero ==1 || numero ==0) {
+	System.out.println("La serie de fibonacci para este numero es cero");
+} else {
 		/* en este bucle se suman la ultima posición del array y la anterior para
 		generar cada nuevo valor de la serie*/
 		for (int i = 1; i <= numeroModificado; i++) {
@@ -36,5 +38,5 @@ public class M7_2Ejercicio8 {
 		}
 		System.out.println("Los " + numero + " primeros numeros de la serie de Fibonacci son: \n \n" + serie);
 	}
-
+	}
 }
