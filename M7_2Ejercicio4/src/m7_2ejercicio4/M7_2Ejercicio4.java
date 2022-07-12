@@ -19,7 +19,7 @@ public class M7_2Ejercicio4 {
 			
 		} while (numero < 0);
 
-		for (long i = numero; i >= 1; i--) {
+		for (long i = numero; i > 1; i--) {
 			factorial *= i;
 		}
 		System.out.println("el factorial de " + numero + " es :" + factorial);
