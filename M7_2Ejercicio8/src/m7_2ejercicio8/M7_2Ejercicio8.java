@@ -39,4 +39,12 @@ if (numero ==1 || numero ==0) {
 		System.out.println("Los " + numero + " primeros numeros de la serie de Fibonacci son: \n \n" + serie);
 	}
 	}
-}
+}/* solucion del profe (la mia tiene el fallo de que si mete 0 o 1 el usuario, te sale 0 y 1
+el hace un metodo que devuelve un array y lo imprime en lugar de ser void como hice yo
+public static ArrayList serie(int numero) {
+ArrayList<Integer> serie = new ArrayList<Integer>();
+for (int i=0; i<numero;i++) (al poner menor que en lugar de menor o igual, no hace falta restarle un al numero)
+if (i>1) {
+serie.add(serie.get(i-2)+serie.add(i-1); esto añade a la serie las dos posiciones anteriores sumadas
+else if (i==0  || i==1) {
+serie.add(i);
