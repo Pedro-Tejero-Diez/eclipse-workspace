@@ -2,6 +2,10 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+349287547.index
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
 349287547.index
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
@@ -17,10 +21,13 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 1689993460.index
 4256305486.index
 2726192574.index
 =======
+=======
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
@@ -33,6 +40,9 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 1675003117.index
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
