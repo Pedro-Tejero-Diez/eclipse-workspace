@@ -7901,6 +7901,7 @@ java.lang.IllegalArgumentException
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 !SESSION 2022-07-14 13:09:04.861 -----------------------------------------------
 =======
 !SESSION 2022-07-14 06:10:44.938 -----------------------------------------------
@@ -7923,6 +7924,9 @@ java.lang.IllegalArgumentException
 =======
 !SESSION 2022-07-14 06:10:44.938 -----------------------------------------------
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+!SESSION 2022-07-14 06:10:44.938 -----------------------------------------------
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 eclipse.buildId=4.24.0.I20220607-0700
 java.version=17.0.3
 java.vendor=Eclipse Adoptium
@@ -7930,6 +7934,7 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7975,11 +7980,17 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 06:11:34.896
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+!ENTRY org.eclipse.jface 2 0 2022-07-14 06:11:34.896
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 06:11:34.896
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8009,6 +8020,9 @@ Binding(CTRL+SHIFT+T,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76cf91c9,
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76cf91c9,
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -8016,6 +8030,7 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8041,11 +8056,14 @@ Binding(CTRL+SHIFT+T,
 >>>>>>> refs/remotes/origin/main
 =======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74bfdd66,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 06:11:34.896
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8065,11 +8083,14 @@ Binding(CTRL+SHIFT+T,
 >>>>>>> refs/remotes/origin/main
 =======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8099,6 +8120,9 @@ Binding(ALT+SHIFT+R,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fc7e828,
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fc7e828,
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -8106,6 +8130,7 @@ Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8135,10 +8160,14 @@ Binding(ALT+SHIFT+R,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26a9c6df,
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26a9c6df,
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8165,6 +8194,9 @@ Binding(ALT+SHIFT+R,
 =======
 !ENTRY org.eclipse.egit.ui 2 0 2022-07-14 06:11:51.695
 >>>>>>> refs/remotes/origin/main
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2022-07-14 06:11:51.695
+>>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
 !ENTRY org.eclipse.egit.ui 2 0 2022-07-14 06:11:51.695
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
