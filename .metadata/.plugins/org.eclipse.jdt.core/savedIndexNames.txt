@@ -1,6 +1,7 @@
 INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3320324616.index
 1865797976.index
 1689993460.index
@@ -15,6 +16,11 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 3320324616.index
 1865797976.index
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+349287547.index
+3320324616.index
+1865797976.index
+>>>>>>> refs/remotes/origin/main
 1116582451.index
 4208973143.index
 331116642.index
@@ -22,6 +28,9 @@ INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.ecli
 964272430.index
 1675003117.index
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
 =======
 >>>>>>> eb2ef6732ed0c6b1d98f959a712e2ed8fb240101
+=======
+>>>>>>> refs/remotes/origin/main
