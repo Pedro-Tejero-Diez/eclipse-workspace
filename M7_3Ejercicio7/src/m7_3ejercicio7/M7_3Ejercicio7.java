@@ -17,11 +17,11 @@ public class M7_3Ejercicio7 {
 		preuGambes = sc.nextFloat();
 		System.out.println("Introduzca Número de Comensales");
 		comensales = sc.nextInt();
-		
+		//INGREDIENTES POR PERSONA (regla de tres con las cantidades de 4 personas)
 		kgFideos=comensales/2;
 		kgCalamars=comensales/10;
 		kgGambes=comensales/20;
-		
+		//coste total y coste por invitado
 		costeTotal= (kgFideos*preuFideos)+(kgCalamars*preuCalamars)+(kgGambes*preuGambes);
 		costexInvitado=costeTotal/comensales;
 		
