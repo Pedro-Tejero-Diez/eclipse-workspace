@@ -9,11 +9,22 @@ public class POOClase1 {
 		Scanner sc = new Scanner(System.in);
 		
 		Coche car1= new Coche("Ford", "mondeo", 60, 200, "negro");
+		Coche car2 = new Coche(null, null, 0, 0, null);
 		
+		System.out.println(car2.toString());
+	  
+		car2.setMarca("DAcia");
+		car2.setColor("verde");
 		
+		String marca = car1.getMarca();
+		System.out.println(marca);
 		
+		car1.arrancar();
+		car2.frenar();
 		
-		if (car1.equals.car2) {░
+		System.out.println(car1.getMarca()+"  "+ car2.getMarca());
+		
+		if (car1 == car2) {
 			System.out.println("Son iguales");
 		} else {
 			System.out.println("Son diferentes");
