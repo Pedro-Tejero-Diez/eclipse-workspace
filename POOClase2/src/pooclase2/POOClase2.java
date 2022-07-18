@@ -30,7 +30,7 @@ public class POOClase2 {
 		int size = listado.size();
 		int i=0;
 		boolean iguales = false;
-		while (iguales && i<size) {
+		while (!iguales && i<size) {
 			String marcalista = listado.get(i).getMarca();
 			if (marca.equals(marcalista)) {
 				iguales = true;
