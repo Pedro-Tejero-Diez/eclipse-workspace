@@ -1,22 +1,23 @@
-package pooclase2;
+package pooclase2ejercicioextra;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class POOClase2 {
+public class POOClase2Ejercicioextra {
+
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		String marca, modelo;
 		int i=0;
 		boolean encontrado = false;
-		ArrayList<Ordenador> listado = new ArrayList<Ordenador>();
+		ArrayList<NewOrdenador> listado = new ArrayList<NewOrdenador>();
 		
-			Ordenador cpu1 = new Ordenador("Packard Bell", "345HT","Pentium", 16, 1000 );
-			Ordenador cpu2 = new Ordenador("HP", "4700P","PentiumII", 32, 1000 );
-			Ordenador cpu3 = new Ordenador("Acer", "345HT","Acer", 32, 500 );
-			Ordenador cpu4 = new Ordenador("Lenovo", "yoga","Core i5", 64, 1000 );
-			Ordenador cpu5 = new Ordenador("Asus", "Aspire5","Core i7", 64, 1000 );
+			NewOrdenador cpu1 = new NewOrdenador("Packard Bell", "345HT","Pentium", 16, 1000 );
+			NewOrdenador cpu2 = new NewOrdenador("HP", "4700P","PentiumII", 32, 1000 );
+			NewOrdenador cpu3 = new NewOrdenador("Acer", "345HT","Acer", 32, 500 );
+			NewOrdenador cpu4 = new NewOrdenador("Lenovo", "yoga","Core i5", 64, 1000 );
+			NewOrdenador cpu5 = new NewOrdenador("Asus", "Aspire5","Core i7", 64, 1000 );
 			
 			listado.add(cpu1);
 			listado.add(cpu2);
@@ -36,16 +37,21 @@ public class POOClase2 {
 			while (i<tamaño && !encontrado) {
 			if (listado.get(i).getMarca().equalsIgnoreCase(marca) && listado.get(i).getModelo().equalsIgnoreCase(modelo)) {
 				encontrado = true;
-			}
+						}
 			i++;
 			}
-			
+			int posicion = i-1;
 			if (encontrado) {
+				listado.remove(posicion);
 				System.out.println("Tenemos el Modelo y Marca que está buscando");
 			} else
 				System.out.println("Lo sentimos, no tenemos el modelo y Marca que busca");
 			
-			System.out.println(listado);
+			int size2=listado.size();
+			for (int j=0; j<size2;j++) {
+				System.out.println(listado.get(j)); }
+			
+			
 			//primera variacion del programa. Comento para realizar la segunda
 			/*cpu1.programa("Eclipse");
 			
@@ -57,6 +63,6 @@ public class POOClase2 {
 			System.out.println(cpu1.toString());*/
 
 		}
-
 	}
-	
+
+

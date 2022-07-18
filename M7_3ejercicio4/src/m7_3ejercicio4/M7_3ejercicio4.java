@@ -15,6 +15,8 @@ public class M7_3ejercicio4 {
 
 		/*array list con los valores de las letras ordenadas de forma que la posición
 		 * coincide con el valor del resto que deben dar al dividir el número del DNI x 23
+		 * Aunque podria usarse STring, como string es un objeto, ocuparíamos mucho
+		 * más espacio de ram con un array list string que con este de character
 		 */
 
 		ArrayList<Character> serieLetras = new ArrayList<Character>();
