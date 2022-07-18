@@ -57,8 +57,8 @@ public class Ordenador {
 		}
 		
 		//metodo de la clase que realiza la accion de imprimir el nombre del programa		
-		public String  programa (String programa) {
-			return "Se está ejecutando "+programa;
+		public void  programa (String programa) {
+			System.out.println("Se está ejecutando "+programa);
 		}
 	
 		@Override
