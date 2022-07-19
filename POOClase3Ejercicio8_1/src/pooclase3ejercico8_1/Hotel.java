@@ -47,17 +47,17 @@ public class Hotel {
 		así no tengo que recordar a cada paso cuánto era el sueldo o lo que sea*/
 		int sueldo = 1500;
 		int maxHabitaciones = 20;
-		float personalHotel = this.numeroHab / maxHabitaciones;
+		float personalHotel = (float) this.numeroHab / maxHabitaciones;
 		personalHotel = (int) Math.ceil(personalHotel);//redondeamos al alza
 		int costeTotal = (int) personalHotel * sueldo;
-		System.out.println("El numero de personas de servicio necesarias son:" + personalHotel);
-		System.out.println("El coste total de mantenimiento es:" + costeTotal);
+		System.out.println("El numero de personas de servicio necesarias son: " + (int) personalHotel);
+		System.out.println("El coste total de mantenimiento es:" + costeTotal+" euros");
 	}
 	
 
 	@Override
 	public String toString() {
 		return "Hotel [nombre=" + nombre + ", numeroHab=" + numeroHab + ", numeroPlantas=" + numeroPlantas
-				+ ", superficieTotal=" + superficieTotal + "]";
+				+ ", superficieTotal=" + superficieTotal + "]\n";
 	}
 }
