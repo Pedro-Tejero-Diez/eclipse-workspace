@@ -20,10 +20,13 @@ public class POOClase3Ejercicio8_1 {
 		System.out.println(listado);
 
 		boolean sortir = false;
+		int posicion;
 		do {
 			switch (menu()) {
 			case 1:
-				crearHotel(listado);
+				posicion = buscarHotel(listado);
+				crearHotel(listado, posicion);
+				verHoteles(listado);
 				break;
 			case 2:
 				darDeBajaHotel(listado);
@@ -59,9 +62,25 @@ public class POOClase3Ejercicio8_1 {
 		return opcio;
 
 	}
+	public static int buscarHotel(ArrayList<Hotel>listado) {
+		System.out.println("Introduzca nombre Hotel");
+		String nombre = sc.nextLine();
+		boolean encontrado = false;
+		int posicion = -1;
+		int i =0;
+		int size = listado.size();
+		while(i<size && !encontrado) {
+			if (listado.get(i).getNombre().equalsIgnoreCase(nombre)) {
+				encontrado = true;
+				posicion = i;
+			}
+			i++;
+		}
+		return posicion;
+	}
 
-	public static void crearHotel(ArrayList<Hotel> listado) {
-
+	public static void crearHotel(ArrayList<Hotel> listado, int posicion) {
+		if (posicion == -1) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca el nombre del Hotel");
 		String nombre = sc.nextLine();
@@ -77,32 +96,39 @@ public class POOClase3Ejercicio8_1 {
 		Hotel hotel = new Hotel(nombre, numeroHab, numeroPlantas, superficieTotal);
 
 		listado.add(hotel);
-		
-		
+		hotel.calcularManteniment();
+		} else {
+			System.out.println("El Hotel ya esta dado de alta en la base de datos");
+		}
+
+	}
+	
+	public static void verHoteles(listado) {
+		for
 	}
 
 	public static void darDeBajaHotel(ArrayList<Hotel> listado) {
-		
+
 		System.out.println("Introduzca El Nombre del hotel a eliminar: ");
 		sc.nextLine();
 		String nombre = sc.nextLine();
 		int size = listado.size();
-		int i=0, posicion = 0;
+		int i = 0, posicion = 0;
 		boolean encontrado = false;
-		while (i<size && !encontrado) {
-		if (listado.get(i).getNombre().equalsIgnoreCase(nombre)) {
-			encontrado = true;
-			posicion = i;
+		while (i < size && !encontrado) {
+			if (listado.get(i).getNombre().equalsIgnoreCase(nombre)) {
+				encontrado = true;
+				posicion = i;
+			}
+			i++;
 		}
-		i++;
-		}
-		
+
 		if (encontrado) {
 			listado.remove(posicion);
 			System.out.println("Hemos eliminado el hotel de nuestra base de datos");
 		} else
 			System.out.println("El nombre del Hotel no está en nuestra base de datos");
-		
+
 		System.out.println(listado);
 	}
 
