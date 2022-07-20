@@ -146,27 +146,30 @@ public class POOClase3Ejercicio8_1 {
 		if (posicion == -1) {
 			System.out.println("El nombre de Hotel no se encuentra en la base de datos");
 		} else {
-			char modificar;
-			byte input;
+			
+			byte input =-1;
+			do {
 			System.out.println(
 					"Qué parámetro desea modificar?: \n 1. Numero Habitaciones \n 2. Numero Plantas \n 3.Superficie total");
 			input = sc.nextByte();
-
-			while (input < 0 || input > 3) {
-				System.out.println("Por favor, introduzca un numero valido");
+			sc.nextLine();
+			if (input < 0 || input > 3) 
+				System.out.println("Por favor, introduzca un número válido\n");
 			
+			} while (input < 0 || input > 3);
+							
 			switch (input) {
 			case 1:
 				System.out.println("Introduzca NUEVO numero de habitaciones: ");
 				int numeroHabitaciones = sc.nextInt();
 				listado.get(posicion).setNumeroHab(numeroHabitaciones);
-				System.out.println("El numero de habitaciones del Hotel "+listado.get(posicion).getNombre()+" ha sido modificado a"+numeroHabitaciones);
+				System.out.println("El numero de habitaciones del Hotel "+listado.get(posicion).getNombre()+" ha sido modificado a  "+numeroHabitaciones);
 				break;
 			case 2:
 				System.out.println("Introduzca NUEVO numero de PLANTAS: ");
 				int numeroPlantas = sc.nextInt();
 				listado.get(posicion).setNumeroPlantas(numeroPlantas);
-				System.out.println("El numero de plantas del Hotel "+listado.get(posicion).getNombre()+" ha sido modificado a"+numeroPlantas);
+				System.out.println("El numero de plantas del Hotel "+listado.get(posicion).getNombre()+" ha sido modificado a  "+numeroPlantas);
 				break;
 			case 3:
 				System.out.println("Introduzca NUEVA superficie total: ");
@@ -185,6 +188,6 @@ public class POOClase3Ejercicio8_1 {
 		 * system.out(El hotel ha sido eliminado) } else { sysou(El hotel no existe en
 		 * nuestra base de datos");
 		 */
-
 	}
-}
+	
+

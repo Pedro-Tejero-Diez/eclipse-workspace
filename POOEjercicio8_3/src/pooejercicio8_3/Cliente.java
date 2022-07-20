@@ -6,12 +6,12 @@ public class Cliente {
 	
 	private String name;
 	private String lastName;
-	private ArrayList<Cuenta> listcuentas;
+	private ArrayList<Cuenta> cuentas;
 
 	public Cliente(String name, String lastName) {
 		this.name = name;
 		this.lastName = lastName;
-		this.listcuentas = new ArrayList<Cuenta>();
+		this.cuentas = new ArrayList<Cuenta>();
 	}
 
 	public String getName() {
@@ -23,17 +23,19 @@ public class Cliente {
 	}
 
 	public ArrayList<Cuenta> getCuentas() {
-		return listcuentas;
+		return cuentas;
+	}
+	
+	public void agregarCuenta(Cuenta cuenta) {
+		this.cuentas.add(cuenta);
 	}
 
 	@Override
 	public String toString() {
-		return "Cliente >>> name=" + name + ", lastName=" + lastName + ", listcuentas=" + listcuentas;
+		return "Cliente >>> Nombre=" + name + ", Apellido=" + lastName + ", Cuentas=" + cuentas;
 	}
 	
-public void agregarCuenta(Cuenta cuenta) {
-	this.listcuentas.add(cuenta);
-}
+
 	}
 
 	
