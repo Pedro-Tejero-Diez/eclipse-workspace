@@ -153,10 +153,10 @@ public class POOClase3Ejercicio8_1 {
 					"Qué parámetro desea modificar?: \n 1. Numero Habitaciones \n 2. Numero Plantas \n 3.Superficie total");
 			input = sc.nextByte();
 			sc.nextLine();
-			if (input < 0 || input > 3) 
+			if (input < 1 || input > 3) 
 				System.out.println("Por favor, introduzca un número válido\n");
 			
-			} while (input < 0 || input > 3);
+			} while (input < 1 || input > 3);
 							
 			switch (input) {
 			case 1:
