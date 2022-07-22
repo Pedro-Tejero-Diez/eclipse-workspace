@@ -32,4 +32,13 @@ public class Hospital extends Edificio {
 		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes);
 	}
 
+	@Override
+	public String toString() {
+		return "Hospital \n numeroEnfermos=" + numeroEnfermos +"\n nombre=" + nombre + "\n numeroPlantas="
+				+ numeroPlantas + "\n superficie=" + superficie+"\n calcularCosteVigilancia()=" + calcularCosteVigilancia() + "\n getNombre()=" + getNombre()
+				+ "\n getNumeroPlantas()=" + getNumeroPlantas() + "\n getSuperficie()=" + getSuperficie()
+				+ "\n toString()=" + super.toString() + "\n getClass()=" + getClass() + "\n hashCode()=" + hashCode()
+				+ "]";
+	}
+
 }

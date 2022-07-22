@@ -35,6 +35,15 @@ public class Cine extends Edificio {
 		int costeMensualVigilantes = (int)numeroVigilantes*1300;
 		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes);
 	}
+
+	@Override
+	public String toString() {
+		return "Cine \n aforoMaximo=" + aforoMaximo + "\n nombre=" + nombre + "\n numeroPlantas="
+				+ numeroPlantas + "\n superficie=" + superficie + "\n calcularCosteVigilancia()=" + calcularCosteVigilancia() + "\n getNombre()=" + getNombre()
+				+ "\n getNumeroPlantas()=" + getNumeroPlantas() + "\n getSuperficie()=" + getSuperficie()
+				+ "\n toString()=" + super.toString() + "\n getClass()=" + getClass() + "\n hashCode()=" + hashCode()
+				+ "]";
+	}
 	
 	
 	

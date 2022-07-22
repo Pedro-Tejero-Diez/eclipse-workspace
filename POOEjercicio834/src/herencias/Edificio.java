@@ -35,11 +35,5 @@ public abstract class Edificio {
 
 	public abstract String  calcularCosteVigilancia();
 
-	@Override
-	public String toString() {
-		return "Edificio [nombre=" + nombre + ", numeroPlantas=" + numeroPlantas + ", superficie=" + superficie
-				+ ", getNombre()=" + getNombre() + ", getNumeroPlantas()=" + getNumeroPlantas() + ", getSuperficie()="
-				+ getSuperficie() + ", calcularCosteVigilancia()=" + calcularCosteVigilancia() + "]";
-	}
 
 	}
