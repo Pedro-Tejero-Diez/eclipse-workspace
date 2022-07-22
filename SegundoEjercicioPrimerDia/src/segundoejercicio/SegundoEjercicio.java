@@ -14,7 +14,7 @@ public class SegundoEjercicio {
 		 System.out.println("introduce otro número : ");
 		 numero2 = number.nextInt();
 
-
+number.close();
 System.out.println("El resultado de la suma es : " + (numero1+numero2));
 System.out.println("El resultado de la resta es : " + (numero1-numero2));
 System.out.println("El resultado de la multiplicacion es : " +numero1*numero2);

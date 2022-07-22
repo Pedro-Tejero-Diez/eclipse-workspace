@@ -19,6 +19,8 @@ public class Ejercicio3 {
 		nota3 = sc.nextInt();
 
 		System.out.println("La media de sus notas es: "+(((float)nota1+nota2+nota3)/3));
+		sc.close();
 	}
+
 
 }
