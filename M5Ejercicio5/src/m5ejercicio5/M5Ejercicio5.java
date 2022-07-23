@@ -36,8 +36,6 @@ public class M5Ejercicio5 {
 		
 		if (edad >= MAYOREDAD && titulo == AFIRMACION || paro == AFIRMACION) {
 			
-		
-			
 			System.out.println("Introduce tu nombre: ");
 			nombre = sc.nextLine();
 			
