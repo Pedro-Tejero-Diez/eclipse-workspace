@@ -34,9 +34,10 @@ public class M7_2Ejercicio5 {
 
 			resto = numero % i;
 			if (resto == 0) {
-
+			
 				encontrado = true;
 			}
+			
 			i--;
 		} while (i > 1 && !encontrado);
 		}
