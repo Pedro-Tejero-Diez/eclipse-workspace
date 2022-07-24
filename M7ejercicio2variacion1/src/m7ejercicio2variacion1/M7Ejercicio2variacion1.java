@@ -28,9 +28,9 @@ public class M7Ejercicio2variacion1 {
 		}
 		} while (i < numNotas);
 		
-		System.out.println("La maxima nota fue :"+maximaNota(listado));
+		System.out.println("La maxima nota fue :"+maximaNota(listado, numNotas));
 		System.out.println("La nota media fue :"+(float)total/numNotas);
-		System.out.println("La minima nota fue :"+minimaNota(listado));
+		System.out.println("La minima nota fue :"+minimaNota(listado, numNotas));
 		
 		if (total/numNotas < 5) {
 			System.out.println("La nota mitjana de la classe està suspesa. Els alumnes haurien de preguntar els seus dubtes i treballar més");
@@ -42,10 +42,10 @@ public class M7Ejercicio2variacion1 {
 		
 	}
 
-		public static int maximaNota(ArrayList<Integer> e) {
+		public static int maximaNota(ArrayList<Integer> e, int numNotas) {
 			int max;
 			Collections.sort(e);
-			max = e.get(2);
+			max = e.get(numNotas-1);
 			return max;
 		}
 		public static int minimaNota(ArrayList<Integer> e) {

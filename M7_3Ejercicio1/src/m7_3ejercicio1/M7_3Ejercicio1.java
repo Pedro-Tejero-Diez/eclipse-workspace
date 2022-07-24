@@ -97,7 +97,7 @@ public class M7_3Ejercicio1 {
 
 		System.out.println("Introduzca el Radio del circulo");
 		radio = sc.nextInt();
-		area = PI * (radio * radio);
+		area = (float) Math.PI * (radio * radio);
 		System.out.println("El área del circulo es: " + area + " m2");
 	}
 
