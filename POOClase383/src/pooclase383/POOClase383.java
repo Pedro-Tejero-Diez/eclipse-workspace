@@ -78,7 +78,8 @@ public class POOClase383 {
 		return opcio;
 
 	}
-
+// hago dos metodos buscarCliente para probar las dos formas que hemos aprendido en clase
+	
 	public static int buscarCliente(ArrayList<Cliente> clientes) {
 		System.out.println("Introduzca nombre cliente");
 		String name = sc.nextLine();

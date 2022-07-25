@@ -1,6 +1,7 @@
 package herencias;
 
 public abstract class Edificio {
+
 	protected String nombre;
 	protected int numeroPlantas;
 	protected int superficie;
@@ -23,17 +24,22 @@ public abstract class Edificio {
 		return superficie;
 	}
 
-	public String limpieza (int superficie, int numeroPlantas) {
-		this.superficie = superficie;
-		this.numeroPlantas = numeroPlantas;
+	public String limpieza () {
 		
 		float tiempoLimpieza= (superficie/5)+(numeroPlantas/2);
 		float costeMensualLimpieza = tiempoLimpieza*30;
 		
-		return ("El tiempo de limpieza del Edidficio es: "+tiempoLimpieza+"\n"+"El coste mensual de la limpieza es de:"+costeMensualLimpieza+"euros");	
+		return ("El tiempo de limpieza del Edificio es: "+tiempoLimpieza+" minutos"+"\n El coste mensual de la limpieza es de:"+costeMensualLimpieza+" euros");	
 		}
 
 	public abstract String  calcularCosteVigilancia();
+	
+	@Override
+	public String toString() {
+		return "Edificio --> nombre=" + nombre + "\n numeroPlantas=" + numeroPlantas + 
+				"\n superficie=" + superficie;
+	}
+
 
 
 	}

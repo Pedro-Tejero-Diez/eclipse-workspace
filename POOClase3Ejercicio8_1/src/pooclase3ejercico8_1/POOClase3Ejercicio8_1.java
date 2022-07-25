@@ -11,12 +11,12 @@ public class POOClase3Ejercicio8_1 {
 
 		ArrayList<Hotel> listado = new ArrayList<Hotel>();
 		Hotel hotel1 = new Hotel("Ritz", 300, 30, 10000);
-		Hotel hotel4 = new Hotel("H10", 300, 30, 10000);
-		Hotel hotel5 = new Hotel("Ilunion", 300, 30, 10000);
+		Hotel hotel2 = new Hotel("H10", 300, 30, 10000);
+		Hotel hotel3 = new Hotel("Ilunion", 300, 30, 10000);
 
 		listado.add(hotel1);
-		listado.add(hotel4);
-		listado.add(hotel5);
+		listado.add(hotel2);
+		listado.add(hotel3);
 		verHoteles(listado);
 
 		boolean sortir = false;

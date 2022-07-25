@@ -3,15 +3,12 @@ package pooclase2ejerciciolibre;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import pooclase2.Ordenador;
-
 public class POOClase2Ejerciciolibre {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		String name, lastName, dni, tamaño;
-		int i=0;
-		boolean encontrado = false;
+		String name, lastName, dni;
+		
 		ArrayList<Character> serieLetras = new ArrayList<Character>();
 		serieLetras.add('T');
 		serieLetras.add('R');
@@ -45,7 +42,7 @@ public class POOClase2Ejerciciolibre {
 			name = sc.nextLine();
 			System.out.println("Introduzca 1er Apellido:");
 			lastName = sc.nextLine();
-		
+					
 		do {
 				System.out.println("Introduzca su DNI con letra al final");
 				dni = sc.nextLine();
@@ -54,26 +51,15 @@ public class POOClase2Ejerciciolibre {
 				}
 			} while (dni.length() != 9);
 		
-		if (checkDni(dni, listado) {
-			
-		}
+		Persona persona1 = new Persona(name, lastName, dni);
 		
 		
+		if (listado.get(1).checkDni(dni, serieLetras)) {
+					
+			System.out.println("El DNI es correcto");
 		
-		
-			tamaño = listado.size();
-			while (i<tamaño && !encontrado) {
-			if (listado.get(i).getMarca().equalsIgnoreCase(marca) && listado.get(i).getModelo().equalsIgnoreCase(modelo)) {
-				encontrado = true;
-			}
-			i++;
-			}
-			
-			if (encontrado) {
-				System.out.println("Tenemos el Modelo y Marca que está buscando");
 			} else
-				System.out.println("Lo sentimos, no tenemos el modelo y Marca que busca");
+				System.out.println("La letra del DNI  esta mal");
 
 	}
-
 }

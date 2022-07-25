@@ -11,6 +11,15 @@ public class Coche {
 	private int cilindrada;
 	private String color;
 
+	public Coche(String marca, String modelo, int potencia, int cilindrada, String color) {
+		super();
+		this.marca = marca;
+		this.modelo = modelo;
+		this.potencia = potencia;
+		this.cilindrada = cilindrada;
+		this.color = color;
+	}
+
 	/*
 	 * metodos añadidos por mí y que pongo como publicos, por lo que se pueden usar
 	 * desde fuera de la clase, o sea dentro de todo el package (o más alla?¿)
@@ -72,13 +81,13 @@ public class Coche {
 		this.color = color;
 	}
 
-	public Coche(String marca, String modelo, int potencia, int cilindrada, String color) {
-		super();
-		this.marca = marca;
-		this.modelo = modelo;
-		this.potencia = potencia;
-		this.cilindrada = cilindrada;
-		this.color = color;
+	@Override
+	public String toString() {
+		return "Coche --> marca=" + marca + "\n modelo=" + modelo + "\n potencia=" + potencia + "\n cilindrada=" + cilindrada
+				+ "\n color=" + color + "\n getMarca()=" + getMarca() + "\n getModelo()=" + getModelo()
+				+ "\n getPotencia()=" + getPotencia() + "\n getCilindrada()=" + getCilindrada() + "\n getColor()="
+				+ getColor() + "\n getClass()=" + getClass() + "\n hashCode()=" + hashCode() + "\n toString()="
+				+ super.toString();
 	}
 
 }

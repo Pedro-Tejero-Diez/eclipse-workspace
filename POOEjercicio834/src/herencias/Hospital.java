@@ -18,23 +18,21 @@ public class Hospital extends Edificio {
 	}
 	
 	
-	public String repartirComida (int numeroEnfermos) {
-		this.numeroEnfermos=numeroEnfermos;
+	public String repartirComida () {
 		int totalRaciones = numeroEnfermos*RACIONESDIARIAS;
 		return ("Se estan repartiendo "+totalRaciones+" Raciones");
 	}
 
 	@Override
 	public String calcularCosteVigilancia() {
-		super.superficie = superficie;
 		float numeroVigilantes = (int) Math.ceil(superficie/1000);
 		int costeMensualVigilantes = (int)numeroVigilantes*1300;
-		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes);
+		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes+" euros");
 	}
 
 	@Override
 	public String toString() {
-		return "Hospital \n numeroEnfermos=" + numeroEnfermos +"\n nombre=" + nombre + "\n numeroPlantas="
+		return "Tipo de Edifcio: Hospital \n numeroEnfermos=" + numeroEnfermos +"\n nombre=" + nombre + "\n numeroPlantas="
 				+ numeroPlantas + "\n superficie=" + superficie+"\n calcularCosteVigilancia()=" + calcularCosteVigilancia() + "\n getNombre()=" + getNombre()
 				+ "\n getNumeroPlantas()=" + getNumeroPlantas() + "\n getSuperficie()=" + getSuperficie()
 				+ "\n toString()=" + super.toString() + "\n getClass()=" + getClass() + "\n hashCode()=" + hashCode()

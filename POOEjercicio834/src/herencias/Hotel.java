@@ -16,8 +16,7 @@ public class Hotel extends Edificio {
 	public void setnumHabitaciones(int numHabitaciones) {
 		this.numHabitaciones = numHabitaciones;
 	}
-	public String calculoPersonas (int numHabitaciones) {
-		this.numHabitaciones=numHabitaciones;
+	public String calculoPersonas () {
 		float numeroPersonas = (int)Math.ceil(numHabitaciones)/20;
 		int sueldoTotal=(int)numeroPersonas*1000;
 		
@@ -25,21 +24,12 @@ public class Hotel extends Edificio {
 	}
 	@Override
 	public String calcularCosteVigilancia() {
-		super.superficie = superficie;
-		float numeroVigilantes = (int) Math.ceil(superficie/1000);
+		float numeroVigilantes = (int) Math.ceil((float) superficie/1000);
 		int costeMensualVigilantes = (int)numeroVigilantes*1800;
-		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes);
+		return ("El coste de Vigilancia mensual es de: "+costeMensualVigilantes+" euros");
 	}
 
-	@Override
-	public String toString() {
-		return "Hotel \n numHabitaciones=" + numHabitaciones + "\n nombre=" + nombre + "\n numeroPlantas="
-				+ numeroPlantas + "\n superficie=" + superficie + "\n getnumHabitaciones()=" + getnumHabitaciones()
-				+ "\n calcularCosteVigilancia()=" + calcularCosteVigilancia() + "\n getNombre()=" + getNombre()
-				+ "\n getNumeroPlantas()=" + getNumeroPlantas() + "\n getSuperficie()=" + getSuperficie()
-				+ "\n toString()=" + super.toString() + "\n getClass()=" + getClass() + "\n hashCode()=" + hashCode()
-				+ "]";
-	}
+
 
 
 	
