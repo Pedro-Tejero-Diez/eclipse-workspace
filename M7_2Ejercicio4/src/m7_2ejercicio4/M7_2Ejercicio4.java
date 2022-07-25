@@ -10,8 +10,8 @@ public class M7_2Ejercicio4 {
 		 * usuario
 		 */
 		Scanner sc = new Scanner(System.in);
-		long numero;
-		long factorial = 1;
+		double numero;
+		double factorial = 1d;
 
 		do {
 			System.out.println("Introduce el numero del que quieres saber el factorial");
@@ -19,7 +19,7 @@ public class M7_2Ejercicio4 {
 			
 		} while (numero < 0);
 
-		for (long i = numero; i > 1; i--) {
+		for (double i = numero; i > 1; i--) {
 			factorial *= i;
 		}
 		System.out.println("el factorial de " + numero + " es :" + factorial);

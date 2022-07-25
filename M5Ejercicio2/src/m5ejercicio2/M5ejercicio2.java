@@ -25,7 +25,7 @@ public class M5ejercicio2 {
 			else if
 			(numero1 < numero2) {
 				for (i = numero1; i <= numero2; i++) {
-					x += i;
+					x += i;//seria mejor llamar a la variable, suma, por ejemplo
 					} 
 			}
 			else {

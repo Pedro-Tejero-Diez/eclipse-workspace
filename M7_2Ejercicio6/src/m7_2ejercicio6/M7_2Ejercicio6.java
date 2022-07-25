@@ -8,7 +8,7 @@ public class M7_2Ejercicio6 {
 		
 		Scanner sc= new Scanner (System.in);
 		int numero;
-		
+		do {
 		System.out.println("Introduce un numero : ");
 		numero = sc.nextInt();
 		esPrimer(numero);
@@ -17,23 +17,24 @@ public class M7_2Ejercicio6 {
 			System.out.println("El numero "+numero+" NO es primo");
 		} else {
 			System.out.println("En efecto el numero "+numero+" es PRIMO");
-			
 		}
+	} while (esPrimer(numero));
 	}
-public static boolean esPrimer(int numero) {
-	boolean primo = false;
-	int resto, i=2;
-	
-	while (i<numero && !primo) {
-		
-	resto = numero%i;
-	
-	if (resto ==0) {
-		primo = true;
+
+	public static boolean esPrimer(int numero) {
+		boolean primo = false;
+		int resto, i = 2;
+
+		while (i < numero && !primo) {
+
+			resto = numero % i;
+
+			if (resto == 0) {
+				primo = true;
+			}
+			i++;
+
+		}
+		return primo;
 	}
-	i++;
-		
-	}
-	return primo;
-}
 }
