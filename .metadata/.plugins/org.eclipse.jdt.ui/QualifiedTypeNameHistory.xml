@@ -6,8 +6,10 @@
     <fullyQualifiedTypeName name="herencias.Cine"/>
     <fullyQualifiedTypeName name="herencias.Hotel"/>
     <fullyQualifiedTypeName name="herencias.Hospital"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="herencias.Edificio"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="herencias.Trabajador"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="herencias.Piloto"/>
+    <fullyQualifiedTypeName name="herencias.Mecanico"/>
 </qualifiedTypeNameHistroy>

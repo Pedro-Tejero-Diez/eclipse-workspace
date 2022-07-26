@@ -36,7 +36,7 @@ public class Escuderia {
 
 	@Override
 	public String toString() {
-		return "Escuderia -->" + pais + "\n presupuesto=" + presupuesto + "\n coches=" + coches + "\n trabajadores="
+		return "Escuderia -->" + pais + ": \n presupuesto=" + presupuesto + "\n coches=" + coches + "\n trabajadores="
 				+ trabajadores;
 	}
 	

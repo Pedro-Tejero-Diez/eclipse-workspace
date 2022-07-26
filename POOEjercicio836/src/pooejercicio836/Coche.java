@@ -32,8 +32,8 @@ public class Coche {
 
 	@Override
 	public String toString() {
-		return "Coche --> potencia=" + potencia + "\n velMaxima=" + velMaxima + "\n color=" + color + "\n precioMercado="
-				+ precioMercado;
+		return "Coche --> potencia=" + potencia + ", velMaxima=" + velMaxima + ", color=" + color + ", precioMercado="
+				+ precioMercado+"\n";
 	}
 	
 	

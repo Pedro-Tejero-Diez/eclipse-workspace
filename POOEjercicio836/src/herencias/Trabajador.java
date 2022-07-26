@@ -5,6 +5,7 @@ public abstract class Trabajador {
 	protected String apellido;
 	protected byte edad;
 	protected byte antiguedad;
+	protected final int SUELDO_BASE = 50000;
 	
 	public Trabajador(String nombre, String apellido, byte edad, byte antiguedad) {
 		this.nombre = nombre;
