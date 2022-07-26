@@ -1,17 +1,5 @@
 INDEX VERSION 1.131+C:\Users\pedro\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
-1041563482.index
-1086634071.index
 1865797976.index
-3041107255.index
-1689993460.index
-132168438.index
-4035139947.index
-3730585808.index
-3314198231.index
-524089487.index
+1531837467.index
 810703356.index
-2691756180.index
-4254331814.index
-964272430.index
-3798936639.index
-1675003117.index
+3041107255.index
