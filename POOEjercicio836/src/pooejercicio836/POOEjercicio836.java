@@ -106,66 +106,80 @@ public class POOEjercicio836 {
 // este metodo creará un trabajador en la escuderia que se le indique 
 
 	public static void crearTrabajador(ArrayList<Escuderia> escuderias) {
+
+		// primero comprobar si la escuderia esta en la base de datos
+
 		System.out.println("introduzca Pais Escuderia");
 		String pais = sc.nextLine();
-		Escuderia escuderia = null;
-		if (buscarEscuderia(escuderias, pais) != null) {
-			escuderia = buscarEscuderia(escuderias, pais);
+		Escuderia escuderia = buscarEscuderia(escuderias, pais);
+		if (escuderia == null) {
+			System.out.println("La escuderia no existe en la base de datos");
+		} else
+			// si existe, pedimos los datos del trabajador que queremos introducir
 			System.out.println("Introduzca nombre Trabajador");
-			String nombre = sc.nextLine();
-			System.out.println("Introduzca apellido Trabajador");
-			String apellido = sc.nextLine();
+		String nombre = sc.nextLine();
+		System.out.println("Introduzca apellido Trabajador");
+		String apellido = sc.nextLine();
 
-			if (buscarTrabajador(nombre, apellido, escuderia) != null) {
-				System.out.println("El trabajador ya esta dado de alta en esta escuderia");
-			} else {
-				System.out.println("Introduzca edad trabajador: ");
-				byte edad = sc.nextByte();
-				System.out.println("Introduzca antiguedad Trabajador: ");
-				byte antiguedad = sc.nextByte();
-				sc.nextLine();
-				byte opcio;
-				final byte MINIMO = 1;
-				final byte MAXIMO = 2;
-				do {
-					System.out.println("Introduzca tipo Trabajador: \n opcion 1. Piloto \n Opción 2 Mecánico");
-					opcio = sc.nextByte();
-					sc.nextLine();
-					if (opcio < MINIMO || opcio > MAXIMO) {
-						System.out.println("Escoge una opción valida");
-					}
-				} while (opcio < MINIMO || opcio > MAXIMO);
-				switch (opcio) {
-				case 1:
-					System.out.println("Introduzca Altura en cm");
-					int altura = sc.nextInt();
-					System.out.println("Introduzca Peso en kg");
-					int peso = sc.nextInt();
-					Piloto piloto = new Piloto(nombre, apellido, edad, antiguedad, altura, peso);
-					escuderia.getTrabajadores().add(piloto);
-					break;
-				case 2:
-					System.out.println("Tienes estudios superiores? S/N");
-					String input = sc.nextLine();
-					input = input.toLowerCase();
-					boolean estudios = false;
-					if (input.charAt(0) == 's') {
-						estudios = true;
-					}
-					Mecanico mecanico = new Mecanico(nombre, apellido, edad, antiguedad, estudios);
-					escuderia.getTrabajadores().add(mecanico);
-					break;
-				}
-				System.out.println("El trabajador " + nombre + "  " + apellido
-						+ " ha sido dado de alta en la escuderia de " + pais);
-			}
-			System.out.println(escuderia);
+		// chequeamos que el trabajador no exista ya en esa escuderia
+		Trabajador trabajador = buscarTrabajador(nombre, apellido, escuderia);
 
+		if (trabajador != null) {
+			System.out.println("El trabajador ya esta dado de alta en esta escuderia");
 		} else {
-			System.out.println("La escudería indicada no existe en la base de datos");
+			System.out.println("Introduzca edad trabajador: ");
+			byte edad = sc.nextByte();
+			System.out.println("Introduzca antiguedad Trabajador: ");
+			byte antiguedad = sc.nextByte();
+			sc.nextLine();
+			byte opcio;
+			final byte MINIMO = 1;
+			final byte MAXIMO = 2;
+
+			// hasta aqui tenemos los datos comunes a trabajadores, ahora debemos saber que
+			// clase de trabajador querems crear
+			do {
+				System.out.println("Introduzca tipo Trabajador: \n opcion 1. Piloto \n Opción 2 Mecánico");
+				opcio = sc.nextByte();
+				sc.nextLine();
+				if (opcio < MINIMO || opcio > MAXIMO) {
+					System.out.println("Escoge una opción valida");
+				}
+			} while (opcio < MINIMO || opcio > MAXIMO);
+			switch (opcio) {
+			case 1:
+				System.out.println("Introduzca Altura en cm");
+				int altura = sc.nextInt();
+				System.out.println("Introduzca Peso en kg");
+				int peso = sc.nextInt();
+				Piloto piloto = new Piloto(nombre, apellido, edad, antiguedad, altura, peso);
+				escuderia.getTrabajadores().add(piloto);
+				break;
+			case 2:
+				System.out.println("Tienes estudios superiores? S/N");
+				String input = sc.nextLine();
+				input = input.toLowerCase();
+				boolean estudios = false;
+				if (input.charAt(0) == 's') {
+					estudios = true;
+				}
+				Mecanico mecanico = new Mecanico(nombre, apellido, edad, antiguedad, estudios);
+				escuderia.getTrabajadores().add(mecanico);
+				break;
+			}
+			System.out.println(
+					"El trabajador " + nombre + "  " + apellido + " ha sido dado de alta en la escuderia de " + pais);
 		}
+		System.out.println(escuderia);
+
 	}
-//este metodo eliminará el trabajador buscando en todas las escuderias (gracias al metodo sobrecargado "buscar trabajador")
+
+	/*
+	 * este metodo eliminará el trabajador buscando en todas las escuderias por eso
+	 * he sobrecargado el metodo "buscar trabajador", para que pueda buscar o bien,
+	 * dentro de una escuderia concreta (como cuando queremos crear un trabajador o
+	 * en todas como cuando buscamos un trabajador concreto
+	 */
 
 	public static void eliminarTrabajador(ArrayList<Escuderia> escuderias) {
 
@@ -183,6 +197,9 @@ public class POOEjercicio836 {
 		}
 	}
 
+	// este metodo busca el trabajador que queremos en todas la base de datos y te
+	// dice dónde esta y sus datos
+
 	public static void mostrarTrabajador(ArrayList<Escuderia> escuderias) {
 		System.out.println("Introduzca nombre Trabajador");
 		String nombre = sc.nextLine();
@@ -191,7 +208,8 @@ public class POOEjercicio836 {
 		if (buscarTrabajador(nombre, apellido, escuderias) != null) {
 			Escuderia escuderia = buscarTrabajador(nombre, apellido, escuderias);
 			Trabajador trabajador = buscarTrabajador(nombre, apellido, escuderia);
-			System.out.println("El trabajador que buscas está en la escuderia de "+escuderia.getPais()+" y estos son sus datos:");
+			System.out.println("El trabajador que buscas está en la escuderia de " + escuderia.getPais()
+					+ " y estos son sus datos:");
 			System.out.println(trabajador);
 		} else {
 			System.out.println("El trabajador no existe en la base de datos");
@@ -207,6 +225,7 @@ public class POOEjercicio836 {
 			System.out.println("La escudería indicada no existe en la base de datos");
 	}
 
+	// este metodo mostrará los coches de una escuderia concreta
 	public static void mostrarCoche(ArrayList<Escuderia> escuderias) {
 		System.out.println("introduzca Pais Escuderia");
 		String pais = sc.nextLine();
@@ -219,30 +238,40 @@ public class POOEjercicio836 {
 		}
 	}
 
+	// metodo para buscar un trabajador en una escuderia concreta
 	public static Trabajador buscarTrabajador(String Nombre, String Apellido, Escuderia escuderia) {
 
 		Trabajador trabajador = null;
 		int size = escuderia.getTrabajadores().size();
 		int i = 0;
 		while (trabajador == null && i < size) {
-			if (size>0 && (escuderia.getTrabajadores().get(i).getNombre().equalsIgnoreCase(Nombre)
+			if (size > 0 && (escuderia.getTrabajadores().get(i).getNombre().equalsIgnoreCase(Nombre)
 					&& escuderia.getTrabajadores().get(i).getApellido().equalsIgnoreCase(Apellido))) {
 				trabajador = escuderia.getTrabajadores().get(i);
-			}
+			} // la condicion size > 0 es para que no de error cuando la lista esta vacia
 			i++;
 		}
 		return trabajador;
 	}
 
+	// metodo (sobrecargado) para buscar un trabajador en todas las escuderias
 	public static Escuderia buscarTrabajador(String Nombre, String Apellido, ArrayList<Escuderia> escuderias) {
 		Escuderia escuderia = null;
 		int size = escuderias.size();
-		int i = 0;
+		int i = 0, j = 0;
 		while (escuderia == null && i < size) {
-			if (escuderias.get(i).getTrabajadores().size() > 0
-					&& (escuderias.get(i).getTrabajadores().get(i).getNombre().equalsIgnoreCase(Nombre)
-							&& escuderias.get(i).getTrabajadores().get(i).getApellido().equalsIgnoreCase(Apellido))) {
-				escuderia = escuderias.get(i);
+			Escuderia escuderia2 = escuderias.get(i);// cogemos la escuderia siguiente en el array
+			int size2 = escuderia2.getTrabajadores().size();// cogemos el tamaño del array trabajadores de esa escuderia
+			if (size2 > 0) {// si no hay ningun trabajador en esa escuderia, devuelve null
+				// ahora buscamos el trabajador en el array trabajadores de la escuderia que
+				// toca con un segundo while
+				while (j < size2 && escuderia == null) {
+					if (escuderia2.getTrabajadores().get(j).getNombre().equalsIgnoreCase(Nombre)
+							&& escuderia2.getTrabajadores().get(j).getApellido().equalsIgnoreCase(Apellido)) {
+						escuderia = escuderia2;
+					}
+					j++;
+				}
 			}
 			i++;
 		}
@@ -250,6 +279,7 @@ public class POOEjercicio836 {
 	}
 
 	public static Escuderia buscarEscuderia(ArrayList<Escuderia> escuderias, String pais) {
+
 		Escuderia escuderia = null;
 		int size = escuderias.size();
 		int i = 0;
