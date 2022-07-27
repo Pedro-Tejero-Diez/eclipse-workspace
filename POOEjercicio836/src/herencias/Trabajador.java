@@ -6,15 +6,15 @@ public abstract class Trabajador {
 	protected byte edad;
 	protected byte antiguedad;
 	protected final int SUELDO_BASE = 50000;
-	
+
 	public Trabajador(String nombre, String apellido, byte edad, byte antiguedad) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
 		this.antiguedad = antiguedad;
 	}
-	
-	public Trabajador () {
+
+	public Trabajador() {
 	}
 
 	public String getNombre() {
@@ -48,9 +48,6 @@ public abstract class Trabajador {
 	public void setAntiguedad(byte antiguedad) {
 		this.antiguedad = antiguedad;
 	}
-	
-	public abstract int sueldo ();
-	
-	
 
+	public abstract int sueldo();
 }

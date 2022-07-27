@@ -9,7 +9,7 @@ public class Escuderia {
 	private int presupuesto;
 	private ArrayList<Coche> coches;
 	private ArrayList<Trabajador> trabajadores;
-	
+
 	public Escuderia(String pais, int presupuesto, ArrayList<Coche> coches, ArrayList<Trabajador> trabajadores) {
 		super();
 		this.pais = pais;
@@ -39,8 +39,5 @@ public class Escuderia {
 		return "Escuderia -->" + pais + ": \n presupuesto=" + presupuesto + "\n coches=" + coches + "\n trabajadores="
 				+ trabajadores;
 	}
-	
-	
 
-	
 }

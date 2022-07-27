@@ -5,9 +5,8 @@ public class Coche {
 	private int velMaxima;
 	private String color;
 	private int precioMercado;
-	
+
 	public Coche(int potencia, int velMaxima, String color, int precioMercado) {
-		super();
 		this.potencia = potencia;
 		this.velMaxima = velMaxima;
 		this.color = color;
@@ -33,9 +32,7 @@ public class Coche {
 	@Override
 	public String toString() {
 		return "Coche --> potencia=" + potencia + ", velMaxima=" + velMaxima + ", color=" + color + ", precioMercado="
-				+ precioMercado+"\n";
+				+ precioMercado + "\n";
 	}
-	
-	
 
 }
