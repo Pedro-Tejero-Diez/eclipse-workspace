@@ -3,6 +3,12 @@ package examenejercicio3;
 import java.util.ArrayList;
 
 public class ExamenEjercicio3 {
+	
+	/*ENUNCIADO: 3. Ens donen dos arraylist. En un hi ha productes disponibles i en l'altre productes que volem comprar.
+	 * Productes disponibles: "xampú", "sabó", "patates", "bledes", "lletuga", "llimones", "kiwis", "alvocats", "fideus", "arròs", "cafè", "xocolata"
+	 *    Productes que volem comprar: "xampú", "xocolata", "alvocats", "bledes", "llimones", "llimonada". 
+	 *    Crea un tercer arraylist amb els productes que estan en els dos arraylist. Aquests seran els productes comprats.
+	 */
 
 	public static void main(String[] args) {
 		//declaración de las arraylists a usar

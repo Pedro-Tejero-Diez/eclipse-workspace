@@ -3,6 +3,9 @@ package examenejercicio2;
 import java.util.ArrayList;
 
 public class ExamenEjercicio2 {
+	/* ENUNCIADO: Donat el següent arraylist de nombres: [15,16, 19, 66, 88, 79, 97] 
+	 * Crea un altre arraylist amb els nombres primers que hi ha en el primer arraylist.
+	 */
 
 	public static void main(String[] args) {
 		//declaramos los arraylist que usaremos
@@ -33,9 +36,7 @@ public class ExamenEjercicio2 {
 			}
 			if (primo) {
 				numerosPrimos.add(valor);
-
 			}
-
 		}
 		System.out.println(numerosPrimos);
 	}

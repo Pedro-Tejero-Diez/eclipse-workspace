@@ -4,6 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ExamenEjercicio4 {
+	
+	/* ENUNCIDADO PASADO POR DISCORD:
+	 *  A la lliga Santander de futbol hi ha 20 equips. (no hace falta hacerlos todos, yo me puse a eso y perdi mucho tiempo)
+	 *  Dels equips volem saber el seu nom, la ciutat a la qual pertany, el nom de l’estadi i els jugadors. 
+	 *  Dels jugadors volem saber el seu nom i cognom, la seva nacionalitat i la seva edat.
+	 *  Omple les dades pertinents com a joc de proves en el mateix codi. Es demana:
+	 *  1- Saber quants jugadors menors de 20 anys té un equip de futbol introduït per l’usuari per teclat.
+	 *  2- Mostrar les dades d’un jugador. L’usuari introduirà el nom i el cognom i llavors han d’aparèixer 
+	 *  les dades del jugador en pantalla.*/
 
 	static Scanner sc = new Scanner(System.in);// como lo voy a usar varias veces a lo largo del main, lo hago static
 
@@ -171,5 +180,4 @@ public class ExamenEjercicio4 {
 		}
 		return ("Equipo: "+equipo.getNombre()+"\n Jugador: "+jugador);
 	}
-
-}
+	}

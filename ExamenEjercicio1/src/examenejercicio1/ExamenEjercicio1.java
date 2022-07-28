@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class ExamenEjercicio1 {
 
 	public static void main(String[] args) {
+		/*ENUNCIADO: Dado un array list de valores de euros, pasarlos a dolares con el cambio 1.2*/
+		
 		// En primer lugar, declaramos los ArrayList que usaremos. Usamos float porque el cambio a Dolar tiene decimales
 		ArrayList<Float> listadoPreciosEuros = new ArrayList<Float>();
 		ArrayList<Float> listadoPreciosDolares = new ArrayList<Float>();
