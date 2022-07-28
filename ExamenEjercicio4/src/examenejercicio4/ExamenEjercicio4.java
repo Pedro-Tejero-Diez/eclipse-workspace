@@ -7,7 +7,7 @@ public class ExamenEjercicio4 {
 
 	static Scanner sc = new Scanner(System.in);// como lo voy a usar varias veces a lo largo del main, lo hago static
 
-	public static void main(String[] args, String nombre, String apellido, Equipo equipo) {
+	public static void main(String[] args) {
 		// declaro los jugadores. Los usare repetidos para que me sirvan de prueba
 		Jugador jugador1 = new Jugador("Pepe", "Perez", "ecuador", 17);
 		Jugador jugador2 = new Jugador("Piter", "Perez", "españa", 20);
@@ -82,7 +82,7 @@ public class ExamenEjercicio4 {
 		do {
 			switch (menu()) {
 			case 1:
-				jugadoresMenosVeinte(equipo);
+				jugadoresMenosVeinte();
 				break;
 			case 2:
 				buscarJugador(equipos);
@@ -116,7 +116,10 @@ public class ExamenEjercicio4 {
 		return opcio;
 	}
 
-	public static void jugadoresMenosVeinte(Equipo equipo) {
+	public static void jugadoresMenosVeinte() {
+		System.out.println("Introduzca nombre equipo: ");
+		String nombreEquipo = sc.nextLine();
+		Equipo
 		ArrayList<Jugador> jugadoresmenor20 = new ArrayList<Jugador>();
 		boolean encontrado = false;
 		int i = 0;
