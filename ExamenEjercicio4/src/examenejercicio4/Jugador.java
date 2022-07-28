@@ -39,8 +39,7 @@ public class Jugador {
 	}
 	@Override
 	public String toString() {
-		return "Jugador [nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad="
-				+ edad + "]";
+		return "Nombre Jugador ="+ nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad ="+edad;
 	}
 	
 	

@@ -9,7 +9,6 @@ public class Equipo {
 	private ArrayList<Jugador> jugadores;
 	
 	public Equipo(String nombre, String ciudad, String estadio, ArrayList<Jugador> jugadores) {
-		super();
 		this.nombre = nombre;
 		this.ciudad = ciudad;
 		this.estadio = estadio;

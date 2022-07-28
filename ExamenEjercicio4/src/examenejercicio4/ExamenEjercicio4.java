@@ -82,7 +82,7 @@ public class ExamenEjercicio4 {
 		do {
 			switch (menu()) {
 			case 1:
-				jugadoresMenosVeinte();
+				jugadoresMenosVeinte(equipos);
 				break;
 			case 2:
 				buscarJugador(equipos);
@@ -116,20 +116,22 @@ public class ExamenEjercicio4 {
 		return opcio;
 	}
 
-	public static void jugadoresMenosVeinte() {
-		System.out.println("Introduzca nombre equipo: ");
-		String nombreEquipo = sc.nextLine();
-		Equipo
+	public static void jugadoresMenosVeinte(ArrayList<Equipo> equipos) {
+	
 		ArrayList<Jugador> jugadoresmenor20 = new ArrayList<Jugador>();
-		boolean encontrado = false;
-		int i = 0;
-		int size = equipo.getJugadores().size();
-		while (!encontrado && i < size) {
-			if (equipo.getJugadores().get(i).getEdad() < 20) {
-				jugadoresmenor20.add(equipo.getJugadores().get(i));
+		int i = 0, j = 0;
+		for (i=0; i<equipos.size(); i++) {
+		int size = equipos.get(i).getJugadores().size();
+		while (j < size) {
+			if (equipos.get(i).getJugadores().get(j).getEdad() < 20) {
+				jugadoresmenor20.add(equipos.get(i).getJugadores().get(j));
 			}
-			System.out.println(jugadoresmenor20);
+			j++;
 		}
+		System.out.println("Jugadores -20 en Equipo: "+equipos.get(i).getNombre());
+		System.out.println(jugadoresmenor20);
+	}
+		
 	}
 
 	public static void buscarJugador(ArrayList<Equipo> equipos) {
@@ -140,11 +142,11 @@ public class ExamenEjercicio4 {
 		if (searchJugador(nombre, apellido, equipos) != null) {
 			System.out.println(searchJugador(nombre, apellido, equipos));
 		} else {
-			System.out.println("Eñ jugador no se encuentra en la base de datos");
+			System.out.println("El jugador no se encuentra en la base de datos");
 		}
 	}
 
-	public static Jugador searchJugador(String nombre, String apellido, ArrayList<Equipo> equipos) {
+	public static String searchJugador(String nombre, String apellido, ArrayList<Equipo> equipos) {
 
 		Equipo equipo = null;
 		Jugador jugador = null;
@@ -167,7 +169,7 @@ public class ExamenEjercicio4 {
 				j = 0;
 			}
 		}
-		return jugador;
+		return ("Equipo: "+equipo.getNombre()+"\n Jugador: "+jugador);
 	}
 
 }
