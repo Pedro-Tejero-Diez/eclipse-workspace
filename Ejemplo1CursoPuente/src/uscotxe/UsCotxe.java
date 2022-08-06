@@ -11,7 +11,7 @@ import Herencia.Furgoneta;
 	       elmeucotxe.setColor(JOptionPane.showInputDialog("Indica un color"));
 	       System.out.println(elmeucotxe.getColor());
 	       elmeucotxe.setSeients(JOptionPane.showInputDialog("Els seients són esportius? si o no"));
-	       
+	    
 	       //Cridarem els metodes de la classe filla o sigui Furgoneta
 	       Furgoneta lamevafurgo = new Furgoneta(8,640);
 	       

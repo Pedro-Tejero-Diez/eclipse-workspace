@@ -76,16 +76,17 @@ public class ExamenEjercicio4 {
 		// Declaramos los equipos
 		Equipo equipo1 = new Equipo("Atletico", "madrid", "calderon", jugadores1);
 		Equipo equipo2 = new Equipo("barca", "barcelona", "nou camp", jugadores2);
+		Equipo equipo3 = new Equipo("Racing", "Santander", "Sardinero", jugadores3);
 
 		// hago un array list de equipos de prueba
 
 		ArrayList<Equipo> equipos = new ArrayList<Equipo>();
 		equipos.add(equipo1);
 		equipos.add(equipo2);
+		equipos.add(equipo3);
 
-		// ya tengo los array list, comienzo el programa en sí. Lo primero el switch y a
-		// continuación el menu de
-		// opciones según lo determinado en el switch
+		/* ya tengo los array list, comienzo el programa en sí. Lo primero el switch y a
+		 * continuación el menu de opciones según lo determinado en el switch*/
 
 		boolean sortir = false;
 		do {
@@ -115,6 +116,7 @@ public class ExamenEjercicio4 {
 			System.out.println("\n******MENÚ PRINCIPAL*****");
 			System.out.println("1. Opció 1. Jugadores -20 años equipo");
 			System.out.println("2. Opció 2. Datos de Un jugador");
+			System.out.println("Salir del programa: 0");
 			System.out.println("Escoja una opción: ");
 			opcio = sc.nextByte();
 			sc.nextLine();
@@ -131,12 +133,13 @@ public class ExamenEjercicio4 {
 		int i = 0, j = 0;
 		for (i=0; i<equipos.size(); i++) {
 		int size = equipos.get(i).getJugadores().size();
-		while (j < size) {
-			if (equipos.get(i).getJugadores().get(j).getEdad() < 20) {
+		/*while (j < size) { (esta es mi solucion pero el profe dijo que mejor un for 
+		 * porque tienes que buscar en todo el array y además evitas bucles infinitos)*/
+		for (j=0; j<size; j++)	
+		if (equipos.get(i).getJugadores().get(j).getEdad() < 20) {
 				jugadoresmenor20.add(equipos.get(i).getJugadores().get(j));
 			}
-			j++;
-		}
+		
 		System.out.println("Jugadores -20 en Equipo: "+equipos.get(i).getNombre());
 		System.out.println(jugadoresmenor20);
 	}
@@ -161,12 +164,12 @@ public class ExamenEjercicio4 {
 		Jugador jugador = null;
 		int size = equipos.size();
 		int i = 0, j = 0;
-		while (equipo == null && i < size) {
-			Equipo equipo2 = equipos.get(i);// cogemos el objeto escuderia posicion "i" en el array
+		while (jugador == null && i < size) {
+			Equipo equipo2 = equipos.get(i);// cogemos el objeto equipo en posicion "i" en el array
 			int size2 = equipo2.getJugadores().size();// cogemos el tamaño del array jugadores de ese equipo
 			if (size2 > 0) {
 				// si no hay ningun jugador en ese equipo devuelve null,(para evitar errores)
-				while (j < size2 && equipo == null) {
+				while (j < size2 && jugador == null) {
 					if (equipo2.getJugadores().get(j).getNombre().equalsIgnoreCase(nombre)
 							&& equipo2.getJugadores().get(j).getApellido().equalsIgnoreCase(apellido)) {
 						equipo = equipo2;
@@ -178,6 +181,8 @@ public class ExamenEjercicio4 {
 				j = 0;
 			}
 		}
-		return ("Equipo: "+equipo.getNombre()+"\n Jugador: "+jugador);
+					
+		return (jugador.getNombre()+" "+jugador.getApellido()+" esta en el equipo: "+equipo);
 	}
-	}
+}
+
