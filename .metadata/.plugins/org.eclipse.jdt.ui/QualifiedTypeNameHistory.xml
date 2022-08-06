@@ -12,4 +12,6 @@
     <fullyQualifiedTypeName name="herencias.Mecanico"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Herencia.Cotxe"/>
+    <fullyQualifiedTypeName name="Herencia.Furgoneta"/>
 </qualifiedTypeNameHistroy>
