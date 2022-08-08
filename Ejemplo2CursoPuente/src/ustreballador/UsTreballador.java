@@ -29,6 +29,7 @@ public class UsTreballador {
         treballador4.setIncentiu(2000);
         System.out.println(treballador4.getSou());
         
+        System.out.println(treballador1.getIdSeguent());
     }
 }
         /*Encarregat capRRHH = new Encarregat("Julia",48000,2015,06,23);

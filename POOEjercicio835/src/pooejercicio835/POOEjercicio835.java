@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class POOEjercicio835 {
 
 	public static void main(String[] args) {
-		
+		//añado comentario para prueba git
 		Scanner sc = new Scanner (System.in);
 				
 		System.out.println("introduzca la posición x del circulo 1:");

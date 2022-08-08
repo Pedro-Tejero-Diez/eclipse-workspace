@@ -152,28 +152,26 @@ public class ExamenEjercicio4 {
 		System.out.println("Introduzca apellido Jugador");
 		String apellido = sc.nextLine();
 		if (searchJugador(nombre, apellido, equipos) != null) {
-			System.out.println(searchJugador(nombre, apellido, equipos));
+			System.out.println("El jugador "+nombre+"  "+apellido+" se encunentra en el equipo: "+searchJugador(nombre, apellido, equipos).getNombre());
 		} else {
 			System.out.println("El jugador no se encuentra en la base de datos");
 		}
 	}
 
-	public static String searchJugador(String nombre, String apellido, ArrayList<Equipo> equipos) {
+	public static Equipo searchJugador(String nombre, String apellido, ArrayList<Equipo> equipos) {
 
 		Equipo equipo = null;
-		Jugador jugador = null;
 		int size = equipos.size();
 		int i = 0, j = 0;
-		while (jugador == null && i < size) {
+		while (equipo == null && i < size) {
 			Equipo equipo2 = equipos.get(i);// cogemos el objeto equipo en posicion "i" en el array
 			int size2 = equipo2.getJugadores().size();// cogemos el tamaño del array jugadores de ese equipo
 			if (size2 > 0) {
 				// si no hay ningun jugador en ese equipo devuelve null,(para evitar errores)
-				while (j < size2 && jugador == null) {
+				while (j < size2 && equipo == null) {
 					if (equipo2.getJugadores().get(j).getNombre().equalsIgnoreCase(nombre)
 							&& equipo2.getJugadores().get(j).getApellido().equalsIgnoreCase(apellido)) {
 						equipo = equipo2;
-						jugador = equipo2.getJugadores().get(j);
 					}
 					j++;
 				}
@@ -182,7 +180,7 @@ public class ExamenEjercicio4 {
 			}
 		}
 					
-		return (jugador.getNombre()+" "+jugador.getApellido()+" esta en el equipo: "+equipo);
+		return (equipo);
 	}
 }
 

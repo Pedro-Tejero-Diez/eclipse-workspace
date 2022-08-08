@@ -55,6 +55,6 @@ public class Treballador {
     }
     
     public static String getIdSeguent(){
-        return "El id segÃ¼ent es: " + IdSeguent;
+        return "El id següent es: " + IdSeguent;
     }
 }
