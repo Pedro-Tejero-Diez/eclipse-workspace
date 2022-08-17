@@ -6,6 +6,26 @@ public class POOClase1 {
 
 	public static void main(String[] args) {
 		
+
+			  public static boolean validatePin(String pin) {
+			    if (pin.length()==4 || pin.length() ==6) {
+			      int i = 0;
+			      char caracter = 48;
+			      while (i<pin.length() && (caracter >47 && caracter <58 )) {
+			    	  caracter = pin.charAt(i);
+			        i++;
+			      }
+			      if (caracter < 47 || caracter >58) {
+			        return false;
+			      }
+			    } else {
+			      return false;
+			    }
+			    return true;
+			  }
+
+			}
+		
 		Scanner sc = new Scanner(System.in);
 		
 		Coche car1= new Coche("Ford", "mondeo", 60, 200, "negro");
