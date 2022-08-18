@@ -1,24 +1,22 @@
 package bancopruebascodewars;
 
 public class Acum {
-	
 
-	public static String accum(String s) {
-		
-		String sMay = s.toUpperCase();
-		String 	totalAcum = "";
-		
-		for (int i = 0; i<sMay.length();i++) {
-			String acum ="";
-			for (int j=0; j<=i; j++) {
-				char c = sMay.charAt(i);
-				acum += c;
+		  public static int squareDigits(int n) {
+			   
+			String number=  Integer.toString(n);
+			int size = number.length();
+			String numeros = "", x;
+			int numbers, y;
+			
+			for (int i= 0; i<size;i++) {
+				y = (int) Character.getNumericValue(number.charAt(i));
+				int y2 = y*y;
+				x = Integer.toString(y2);
+				numeros += x;
 			}
-			String acumMay = acum.charAt(0)+acum.substring(0, (acum.length()-1)).toLowerCase();
-			totalAcum += acumMay+"-";
-		}
-		String finalAcum= totalAcum.substring(0, (totalAcum.length()-1));
-		return finalAcum;
-	}
-
+			numbers = Integer.parseInt(numeros);
+			return numbers;
+			  
+		  }
 }
