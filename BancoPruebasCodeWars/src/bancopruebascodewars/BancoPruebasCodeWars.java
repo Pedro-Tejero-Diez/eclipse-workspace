@@ -1,16 +1,15 @@
 package bancopruebascodewars;
 
-import java.util.Scanner;
 
 public class BancoPruebasCodeWars {
 
 	public static void main(String[] Args){
 		
-		Scanner sc = new Scanner(System.in);
-			System.out.println("introduce varios numeros");
-		int serie = sc.nextInt();
+		System.out.println(Acum.encrypt("2546889565421", 5));
 		
-		System.out.println(Acum.squareDigits(serie));
+		System.out.println(Acum.decrypt("8284654655291", 5));
+		
+	
 	}
 	
 		
