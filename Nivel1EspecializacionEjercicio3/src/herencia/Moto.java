@@ -1,21 +1,15 @@
-package n1nivel3ejercicio1;
+package herencia;
 
-public class Moto {
+public class Moto extends Noticia {
 	
 	private String equipo;
-	private int puntuacion;
-	private int precio;
 
 	public Moto(String titular, String equipo) {
-		super();
-		this.equipo = equipo;
-		
-		puntuacion = 3;
-		precio = 100;
-		if (equipo.contains("Honda") || equipo.contains("Yamaha")) {
-			puntuacion += 3;
+		super(titular);
+		this.equipo=equipo;
+		super.puntuacion=3;
+		super.precio=100;
 		}
-	}	
 
 	public String getEquipo() {
 		return equipo;
@@ -26,6 +20,9 @@ public class Moto {
 	}
 
 	public int getPuntuacion() {
+		if (equipo.contains("Honda") || equipo.contains("Yamaha")) {
+			puntuacion += 3;
+		}
 		return puntuacion;
 	}
 
@@ -40,4 +37,3 @@ public class Moto {
 
 
 }
-

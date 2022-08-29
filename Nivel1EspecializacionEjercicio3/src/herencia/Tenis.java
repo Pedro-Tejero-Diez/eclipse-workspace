@@ -1,21 +1,16 @@
-package n1nivel3ejercicio1;
+package herencia;
 
-public class Tenis {
+public class Tenis extends Noticia{
 	
 	private String competicion;
 	private String tenistas;
-	private int puntuacion;
-	private int precio;
 
 	public Tenis(String titular, String competicion, String tenistas) {
-		super();
+		super(titular);
 		this.competicion = competicion;
 		this.tenistas = tenistas;
-		puntuacion = 4;
-		precio = 150;
-		if (tenistas.contains("Federer") || tenistas.contains("Nadal") || tenistas.contains("Djokovic")) {
-			puntuacion += 4;
-		}
+		super.puntuacion = 4;
+		super.precio = 150;
 	}	
 
 
@@ -36,6 +31,10 @@ public class Tenis {
 	}
 
 	public int getPuntuacion() {
+		
+		if (tenistas.contains("Federer") || tenistas.contains("Nadal") || tenistas.contains("Djokovic")) {
+			puntuacion += 4;
+		}
 		return puntuacion;
 	}
 
@@ -49,3 +48,4 @@ public class Tenis {
 	}
 
 }
+

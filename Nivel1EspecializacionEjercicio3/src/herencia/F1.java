@@ -1,20 +1,14 @@
-package n1nivel3ejercicio1;
+package herencia;
 
-public class F1 {
+public class F1 extends Noticia{
 	
 	private String escuderia;
-	private int puntuacion;
-	private int precio;
 
 	public F1(String titular, String escuderia) {
-		super();
+		super(titular);
 		this.escuderia = escuderia;
-		
-		puntuacion = 4;
-		precio = 100;
-		if (escuderia.contains("Ferrari") || escuderia.contains("Mercedes")) {
-			puntuacion += 2;
-		}
+		super.puntuacion=4;
+		super.precio = 100;
 	}	
 
 	public String getEscuderia() {
@@ -26,6 +20,9 @@ public class F1 {
 	}
 
 	public int getPuntuacion() {
+		if (escuderia.contains("Ferrari") || escuderia.contains("Mercedes")) {
+			puntuacion += 2;
+		}
 		return puntuacion;
 	}
 
@@ -37,6 +34,5 @@ public class F1 {
 		
 		return precio;
 	}
-
 
 }

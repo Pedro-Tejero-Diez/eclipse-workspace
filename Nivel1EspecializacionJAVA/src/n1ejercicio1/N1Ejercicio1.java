@@ -6,7 +6,7 @@ public class N1Ejercicio1 {
 
 	public static void main(String[] args) {
 
-		String opcion = (JOptionPane.showInputDialog("Introduce cero para llamar a un miembro estatico o /b uno para crear una instancia"));
+		String opcion = (JOptionPane.showInputDialog("Introduce cero para llamar a un miembro estatico o uno para crear una instancia"));
 
 		if (opcion.equals("cero")) {
 			//Aqui pedimos el valor de la variable estatica "valor" y eso ya llama a la clase instrumento sin instanciar nada
