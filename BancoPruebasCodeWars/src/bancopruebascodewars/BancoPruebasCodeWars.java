@@ -6,9 +6,8 @@ public class BancoPruebasCodeWars {
 		
 		int [] arr=  {3,2,3,6,4,1,2,3,2,1,2,2,2,1};
 		
-		System.out.println(Acum.getPeaks(arr).toString());
+		System.out.println(Otraspruebas.race(720, 850, 70));
 		
-		System.out.println("pos: "+Acum.getPeaks(arr).keySet()+" peaks: "+Acum.getPeaks(arr).values());
 		
 	}
 			
