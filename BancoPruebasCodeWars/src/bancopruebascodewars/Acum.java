@@ -1,24 +1,19 @@
 package bancopruebascodewars;
 
-import java.util.HashMap;
-
 public class Acum {
 
-	public static String high(String s) {
-		String winner = "";
-		int highScore = 0;
-
-		for (String word : s.split(" ")) {
-			int score = 0;
-			for (char c : word.toCharArray()) {
-				score += c - 'a' + 1;
+	public static String expandedForm(int num) {
+		String suma="", cont = "", cont2="";
+		char[] numero = String.valueOf(num).toCharArray();
+		int size = numero.length;
+		for (int i=0; i<size; i++ ) {
+			
+			for (int j= size; j<=i; j--) {
+				cont += "0";
 			}
-			if (score > highScore) {
-				winner = word;
-				highScore = score;
-			}
+			cont2=numero[i]+cont+"+";
+			suma += cont2;
 		}
-
-		return winner;
+		return suma;
 	}
 }

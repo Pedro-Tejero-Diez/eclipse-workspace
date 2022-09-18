@@ -4,11 +4,7 @@ public class BancoPruebasCodeWars {
 
 	public static void main(String[] Args){
 		
-	
-		
-		System.out.println(Acum.high(" mas lkdkd gh"));
-		
-		
+		System.out.println(Otraspruebas.expandedForm(12));
 	}
 			
 	}
