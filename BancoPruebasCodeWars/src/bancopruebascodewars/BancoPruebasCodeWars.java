@@ -6,6 +6,7 @@ public class BancoPruebasCodeWars {
 
 	public static void main(String[] Args){
 		
+<<<<<<< HEAD
 		String numero = "";
 		do {
 		System.out.println("escribe el numero de telefono:");
@@ -13,6 +14,9 @@ public class BancoPruebasCodeWars {
 		numero = sc.nextLine();
 		} while (!Otraspruebas.validPhoneNumber(numero));
 		System.out.println("El numero es correcto");
+=======
+		System.out.println(Otraspruebas.expandedForm(12));
+>>>>>>> 5058d584b6a69d2ab060a4a8d169e4f34f309f36
 	}
 			
 	}

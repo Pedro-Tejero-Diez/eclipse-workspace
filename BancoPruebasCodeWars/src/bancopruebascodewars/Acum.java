@@ -2,6 +2,7 @@ package bancopruebascodewars;
 
 public class Acum {
 
+<<<<<<< HEAD
 	public static String dashatize(int num) {
 		String result = "";
 		if (num < 0) {
@@ -34,5 +35,20 @@ public class Acum {
 
 		}
 		return result;
+=======
+	public static String expandedForm(int num) {
+		String suma="", cont = "", cont2="";
+		char[] numero = String.valueOf(num).toCharArray();
+		int size = numero.length;
+		for (int i=0; i<size; i++ ) {
+			
+			for (int j= size; j<=i; j--) {
+				cont += "0";
+			}
+			cont2=numero[i]+cont+"+";
+			suma += cont2;
+		}
+		return suma;
+>>>>>>> 5058d584b6a69d2ab060a4a8d169e4f34f309f36
 	}
 }
