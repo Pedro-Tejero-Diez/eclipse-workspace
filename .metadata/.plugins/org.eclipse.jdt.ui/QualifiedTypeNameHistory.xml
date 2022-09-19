@@ -1,27 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
-    <fullyQualifiedTypeName name="herencias.Cine"/>
-    <fullyQualifiedTypeName name="herencias.Hotel"/>
-    <fullyQualifiedTypeName name="herencias.Hospital"/>
-    <fullyQualifiedTypeName name="herencias.Edificio"/>
-    <fullyQualifiedTypeName name="herencias.Trabajador"/>
-    <fullyQualifiedTypeName name="herencias.Piloto"/>
-    <fullyQualifiedTypeName name="herencias.Mecanico"/>
-    <fullyQualifiedTypeName name="Herencia.Cotxe"/>
-    <fullyQualifiedTypeName name="Herencia.Furgoneta"/>
-    <fullyQualifiedTypeName name="java.sql.Array"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-=======
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
->>>>>>> 5058d584b6a69d2ab060a4a8d169e4f34f309f36
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>
