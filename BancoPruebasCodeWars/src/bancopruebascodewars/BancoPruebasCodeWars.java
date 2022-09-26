@@ -4,7 +4,7 @@ public class BancoPruebasCodeWars {
 
 	public static void main(String[] Args){
 		
-		System.out.println(Otraspruebas.expandedForm(12));
+		System.out.println(Acum.incrementString("1234567895487598521"));
 	}
 			
 	}
