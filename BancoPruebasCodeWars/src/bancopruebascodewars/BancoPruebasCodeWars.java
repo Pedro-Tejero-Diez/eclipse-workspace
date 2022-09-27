@@ -7,7 +7,7 @@ public class BancoPruebasCodeWars {
 	public static void main(String[] Args){
 	
 	
-		System.out.println(Otraspruebas.incrementString("abc34edrf34"));
+		System.out.println(Otraspruebas.incrementString("8141501312563789396743746393"));
 	}
 	
 }
