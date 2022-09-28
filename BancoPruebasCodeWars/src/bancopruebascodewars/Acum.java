@@ -2,6 +2,7 @@ package bancopruebascodewars;
 
 public class Acum {
 
+<<<<<<< HEAD
 	public static String incrementString(String str) {
 		String resultado = "";
 		int number = 1;
@@ -38,3 +39,11 @@ public class Acum {
 		return resultado;
 	}
 }
+=======
+	  public static String Factorial(int n) {
+		  MathUtils.factorial
+		    return "";
+		  }
+
+		}
+>>>>>>> c0400bb2516615e1d32f21728d48d12a1e546b65

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
@@ -21,3 +22,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
+=======
+<qualifiedTypeNameHistroy/>
+>>>>>>> c0400bb2516615e1d32f21728d48d12a1e546b65
