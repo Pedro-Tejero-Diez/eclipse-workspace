@@ -10,5 +10,11 @@ public class Percusion extends Instrumento {
 	public void Tocar () {
 		System.out.println("Esto es un instrumento de Percusion");
 	}
+	@Override
+	public String toString() {
+		return "Percusión Nombre=" + getNombre() + ", Precio=" + getPrecio();
+	}
+	
+	
 
 }
