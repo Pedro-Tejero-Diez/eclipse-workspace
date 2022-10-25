@@ -6,11 +6,11 @@ public abstract class Instrumento {
 	private int Precio;
 	//bloque estatico para señalar cuándo se carga la clase madre
 	static {
-		System.out.println("He cargado la clase instrumento");
+		System.out.println("He cargado la clase instrumento\n");
 	}
 	//bloque de inicialización que se cargará cada vez que se instancia un objeto de la madre o hijas
 	{
-		System.out.println("Estoy creando un instrumento");
+		System.out.println("Estoy creando un instrumento\n");
 	}
 	
 	public Instrumento (String Nombre, int Precio ) {

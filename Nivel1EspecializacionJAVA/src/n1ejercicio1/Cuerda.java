@@ -9,12 +9,12 @@ public class Cuerda extends Instrumento {
 	}
 	
 	public void Tocar () {
-		System.out.println("Esto es un instrumento de Cuerda");
+		System.out.println("Esta sonando un instrumento de Cuerda\n");
 	}
 
 	@Override
 	public String toString() {
-		return "Cuerda Nombre=" + getNombre() + ", Precio=" + getPrecio();
+		return "Cuerda Nombre=" + getNombre() + ", Precio=" + getPrecio()+"\n";
 	}
 	
 

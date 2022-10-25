@@ -7,7 +7,7 @@ public class N1Ejercicio1 {
 	public static void main(String[] args) {
 
 		String opcion = (JOptionPane.showInputDialog("Introduce cero para llamar a un miembro estatico "
-				+ "o uno para crear una instancia"));
+				+ "o uno para crear objetos"));
 
 		if (opcion.equals("cero") || opcion.equals("0")) {
 			/*Aqui pedimos el valor de la variable estatica "valor" y
@@ -16,9 +16,11 @@ public class N1Ejercicio1 {
 			 */
 
 			System.out.println("La variable \"valor\" es ="+Viento.valor);
+		
 			
+		} else {
 			/* cada vez que crea un instrumento ejecuta el bloque de inicialización
-			 *  e imprimira el mensaje pero no vuelve a cargar la clase porque el 
+			 *  e imprimira el mensaje pero no vuelve a cargar la clase por eso el 
 			 *  mensaje del bloque estático no se carga de nuevo
 			 */
 			Viento trompeta = new Viento("Trompeta", 500);
@@ -34,15 +36,9 @@ public class N1Ejercicio1 {
 			Percusion tambor = new Percusion("tambor", 400);
 			tambor.Tocar();
 			System.out.println(tambor);
-		
-			
-		} else {
-			/*Aqui instanciamos solamente un objeto de la clase hija para comprobar que se carga 
-			 * la clase (ejecuta bloque estatico) y después al instanciar el objeto, aparecerá primero
-			 * el bloque de inicialización
-			 */			
 			
 			Viento tuba = new Viento("tuba", 1500);
+			tuba.Tocar();
 			System.out.println(tuba);
 		}
 

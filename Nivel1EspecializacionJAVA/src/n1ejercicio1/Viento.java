@@ -14,12 +14,12 @@ public class Viento extends Instrumento {
 	}
 	
 	public void Tocar () {
-		System.out.println("Esto es un instrumento de viento");
+		System.out.println("Esta sonando un instrumento de viento\n");
 	}
 
 	@Override
 	public String toString() {
-		return "Viento Nombre=" + getNombre() + ", Precio=" + getPrecio();
+		return "Viento Nombre=" + getNombre() + ", Precio=" + getPrecio()+"\n";
 	}
 	
 	
