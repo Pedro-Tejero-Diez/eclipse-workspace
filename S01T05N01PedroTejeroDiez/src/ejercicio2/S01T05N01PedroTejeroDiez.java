@@ -13,6 +13,7 @@ public class S01T05N01PedroTejeroDiez {
 			System.out.println("Introduce directorio a listar: ");
 			String input = sc.nextLine();
 			listado(input);
+			sc.close();
 
 		} else {
 			listado(args[0]);
