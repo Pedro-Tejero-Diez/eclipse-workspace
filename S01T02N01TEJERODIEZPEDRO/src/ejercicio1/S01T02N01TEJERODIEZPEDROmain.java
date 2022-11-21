@@ -1,6 +1,7 @@
 package ejercicio1;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class S01T02N01TEJERODIEZPEDROmain {
@@ -10,7 +11,7 @@ public class S01T02N01TEJERODIEZPEDROmain {
 		Scanner sc = new Scanner (System.in);
 		
 		//Primero creamos el array list y los productos que añadiremos al mismo desde la consola
-		ArrayList<Producto> listado = new ArrayList<Producto>();
+		List<Producto> listado = new ArrayList<Producto>();
 		
 		System.out.println("Quieres introducir productos? S/N ");
 		String fin = sc.nextLine();
