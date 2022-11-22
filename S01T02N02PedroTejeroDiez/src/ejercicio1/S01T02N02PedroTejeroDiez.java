@@ -5,58 +5,56 @@ import java.util.InputMismatchException;
 public class S01T02N02PedroTejeroDiez {
 
 	public static void main(String[] args) {
-		Boolean error = true;
-
-		while (error) {
+		
+		Boolean error2 = true;
+		String mayor = "";
+		String nombre = null;
+		int edad = 0;
+		char sexo = ' ';
+		float altura = 0.0f;
+		
+		while (error2) {
 			try {
-				System.out.println("tu nombre es: " + Entrada.llegirString("Introduce tu nombre: "));
-				
-				error = false;
-				
-			} catch (Exception e) {
-				System.out.print(e.getMessage());
+				if (nombre == null) {
+					nombre = Entrada.llegirString("Introduce tu nombre: ");
 				}
-			}
-		error = true;
-		while (error)	try {
-			System.out.println("¿Eres Mayor de edad?: " + Entrada.llegirSiNo("Introduce S/N: "));
-			error = false;
+				if (mayor == "") {
+					if (Entrada.llegirSiNo("¿Eres mayor de edad? (+intro): ")) {
+						mayor = "Eres mayor de edad";
+					} else {
+						mayor = "NO eres mayor de edad";
+					}
+				}
+				if (edad == 0) {
+					
+					edad = Entrada.leerInt("Introduce tu edad(+intro): ");
+				}
+				if (altura == 0) {
+					altura = Entrada.leerFloat("Introduce tu Altura(+intro): ");
+				}
+				if (sexo == ' ') {
+					sexo = Entrada.llegirChar("Introduce tu sexo(+intro): ");
+
+				}
+				
+				System.out.println("Nombre: " + nombre + "\nEdad: " + edad + "\nAltura: " + altura + "\nsexo: " + sexo
+						+ "\n" + mayor);
+				
+				error2 = false;
 			}
 		
-		catch (Exception e) {
-			System.out.print(e.getMessage());
-			}
-		error = true;
-		while (error)	try {
-			System.out.println("tu edad es: " + Entrada.leerInt("Introduce tu edad: "));
-			error = false;
-			}
+		
 		
 		catch (InputMismatchException e) {
-			System.out.print("Introduce el numero en el formato correcto (sin puntos o comas)"+e);
+				System.out.print("Introduce el numero en el formato correcto: " + e + "\n");
+
 			}
-		error = true;
-		while (error)	try {
-			System.out.println("tu altura es: " + Entrada.leerFloat("Introduce tu Altura: "));
-			error = false;
-			}
-		
-		catch (InputMismatchException e) {
-			System.out.print("Introduce la altura en el formato correcto (con un punto para separar los decimales)"+e);
-			}
-		error = true;
-		while (error)	try {
-				System.out.println("tu sexo es: " + Entrada.llegirChar("Introduce tu sexo: "));
-				error = false;
-				}
-			
+
 			catch (Exception e) {
-				System.out.println(e.getMessage());
+				System.out.print(e.getMessage() + "\n");
 			}
+
+		}
+
 	}
-			
-
-
 }
-
-

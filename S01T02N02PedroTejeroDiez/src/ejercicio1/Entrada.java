@@ -3,8 +3,6 @@ package ejercicio1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.swing.Spring;
-
 public class Entrada {
 
 	static Scanner sc = new Scanner(System.in);
@@ -17,24 +15,29 @@ public class Entrada {
 	}
 	
 	public static int leerInt(String x) throws InputMismatchException {
+		sc.nextLine();
+		System.out.println(x);
 		int y = sc.nextInt();
 		sc.nextLine();
 		return y;
 	}
 	
 	public static float leerFloat(String x) throws InputMismatchException {
+		sc.nextLine();
+		System.out.println(x);
 		float y = sc.nextFloat();
 		sc.nextLine();
 		return y;
 	}
 	public static double leerDouble(String x) throws InputMismatchException {
+		System.out.println(x);
 		double y = sc.nextDouble();
 		sc.nextLine();
 		return y;
 	}
 	
 	public static char llegirChar(String missatge) throws Exception {
-		
+		sc.nextLine();
 		System.out.println(missatge);
 		String sexo= sc.nextLine();
 		if (sexo.equalsIgnoreCase("h")||sexo.equalsIgnoreCase("m")) {
@@ -47,22 +50,22 @@ public class Entrada {
 	}
 
 	public static String llegirString(String missatge) throws Exception {
-		
+	
 		System.out.println(missatge);
 		String nombre= sc.nextLine();
 		if (nombre.length()<9) {
-			
 			return nombre;
 		} else {
 			throw new Exception("El nombre debe tener máximo 10 letras\n");
 		}
+	
 		
 	}
 
 	public static boolean llegirSiNo(String missatge) throws Exception {
-	
+		
+		System.out.println(missatge);
 		String y = sc.nextLine();
-		sc.nextLine();
 		if (y.equalsIgnoreCase("s")) {
 		return true;
 		} if (y.equalsIgnoreCase("n")) {
