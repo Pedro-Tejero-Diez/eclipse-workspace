@@ -1,8 +1,10 @@
 package ejercicio2;
 
+import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
-import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 public class S01T03N02PedroTejeroDiez {
 
@@ -10,7 +12,7 @@ public class S01T03N02PedroTejeroDiez {
 
 		Scanner sc = new Scanner(System.in);
 		HashSet<Restaurant> listado = new HashSet<Restaurant>();
-		//List<Restaurant> listadoOrdenado = new ArrayList<Restaurant>(listado);
+		// List<Restaurant> listadoOrdenado = new ArrayList<Restaurant>(listado);
 		int contador = 0;
 
 		while (contador < 5) {
@@ -26,13 +28,14 @@ public class S01T03N02PedroTejeroDiez {
 			} else {
 				System.out.println("ESte Restaurante está repetido. Introduzca otro");
 			}
-		}	
-			TreeSet<Restaurant> listadoOrdenado = new TreeSet<Restaurant>(listado);
-	
-			//Collections.sort(listadoOrdenado);
-			
-			
-		System.out.println(listadoOrdenado.descendingSet());
+		}
+
+		List<Restaurant> listadoOrdenado = listado.stream()
+				.sorted(Comparator.comparing(Restaurant::getNombre).
+						thenComparing(Restaurant::getPuntuacion).reversed())
+				.collect(Collectors.toList());
+
+		System.out.println(listadoOrdenado);
 		sc.close();
 	}
 }

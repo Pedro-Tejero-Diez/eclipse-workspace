@@ -1,9 +1,11 @@
 package ejercicio2;
 
+import java.util.Comparator;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
-public class Restaurant {
+public class Restaurant implements Comparable<Restaurant>{
 
 	private String nombre;
 	private int puntuacion;
@@ -32,7 +34,7 @@ public class Restaurant {
 	public boolean checkLista(HashSet<Restaurant> lista, Restaurant rest) {
 
 		Boolean existe = false;
-		
+
 		for (Restaurant r : lista) {
 			if (r.getNombre().equalsIgnoreCase(rest.getNombre())) {
 				if (r.getPuntuacion() == rest.getPuntuacion()) {
@@ -43,17 +45,18 @@ public class Restaurant {
 
 		return existe;
 	}
-	
-	public LinkedHashSet<Restaurant> ordenarLista 	(HashSet<Restaurant> lista, Restaurant rest) {
-		
-		LinkedHashSet<Restaurant> listadoOrdenado = new LinkedHashSet<Restaurant>();
-		
-		return listadoOrdenado;
-	}
 
 	@Override
 	public String toString() {
-		return "Restaurant= " + nombre + ", puntuacion=" + puntuacion +"\n";
+		return "Restaurant= " + nombre + ", puntuacion=" + puntuacion + "\n";
 	}
-	
+
+	@Override
+	public int compareTo(Restaurant a) {
+		
+		a.getPuntuacion();
+
+		return 0;
+	}
+
 }
