@@ -34,13 +34,12 @@ public class S01T05N02PedroTejeroDiez {
 		} else {
 		
 			try (FileWriter fw = new FileWriter(config.getProperty("DIRECTORIO_SALIDA"), true);
-					BufferedWriter bw = new BufferedWriter(fw);
-					PrintWriter out = new PrintWriter(bw)) {
+					BufferedWriter bw = new BufferedWriter(fw)) {
 
 				SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 				for (int i = 0; i < archivos.length; i++) {
 					File archivo = archivos[i];
-					out.println(String.format("%s (%s) - %d - %s", archivo.getName(),
+					bw.write(String.format("%s (%s) - %d - %s\n", archivo.getName(),
 							archivo.isDirectory() ? "Carpeta" : "Archivo", archivo.length(),
 							sdf.format(archivo.lastModified())));
 				}
