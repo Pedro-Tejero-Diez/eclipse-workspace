@@ -16,7 +16,7 @@ public class S01T08N02PedroTejeroDiez {
 
 	public static String separarNumeros(Integer[]listado) {
 
-		return listado.toString().Stream().
+		return listado.toString();
 
 	}
 
